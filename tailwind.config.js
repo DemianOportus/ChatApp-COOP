@@ -51,6 +51,8 @@ module.exports = {
         // Rubik 700 Rubik Italic 700
         // Rubik 900 Rubik Italic 900
         vogue: "'Vogue', sans-serif", // Vogue 400
+
+        futura: "'Futura Std', sans-serif",
       },
     },
   },

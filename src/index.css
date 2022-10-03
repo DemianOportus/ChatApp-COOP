@@ -33,7 +33,6 @@ html {
 
 .div--joinTriangle {
   width: fullWidth;
-
   background: #444;
   color: #fafafa;
   clip-path: polygon(0 0, 0 100%, 100% 100%);
@@ -45,7 +44,6 @@ html {
 
 .div--joinBackwardsTriangle {
   width: fullWidth;
-
   background: #444;
   color: #fafafa;
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
@@ -78,8 +76,8 @@ html {
 }
 li {
   margin-left: 15%;
-  font-family: Roboto;
   margin-bottom: 10px;
+  margin-top: 10px;
   font-weight: 300;
   font-size: 1.125rem;
   text-align: start;
