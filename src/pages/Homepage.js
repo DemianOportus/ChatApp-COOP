@@ -18,7 +18,7 @@ export default function Homepage() {
         </h1>
         {/* Polygon Shape text */}
         <div className="div--triangle">
-          <h2 className="text-2xl block">{i18n.gettext("whatWeOffer")}</h2>
+          <h2 className="text-lg block">{i18n.gettext("whatWeOffer")}</h2>
         </div>
         {/* 1153 vs 574 */}
         <div className="div--promos">
