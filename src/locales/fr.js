@@ -33,6 +33,17 @@ const fr = {
   bePartOfTeam: "Faites partie de notre équipe médicale",
   getMatchedWithPatients:
     "Faites correspondre les patients qui correspondent à votre domaine d'expertise.",
+
+  //FOOTER
+  contactUs: "Contactez-nous",
+  findUsOn: "Retrouvez-nous",
+  aboutUs: "À propos de nous",
+  dataPrivacy: "confidentialité des données",
+
+  // PAGE--SuccessPage
+  successTitle: "Félicitations!",
+  successText: "Votre inscription a été soumise avec succès.",
+  successText2: "Nous vous informerons lorsque vous aurez une correspondance.",
 };
 
 export default fr;

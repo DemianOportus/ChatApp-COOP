@@ -1,8 +1,9 @@
 import "../index.css";
 import { useEffect, useState, useContext } from "react";
 import i18n from "../i18";
-
 import { Context } from "./Context";
+
+// {i18n.gettext("something")}
 
 export default function AppendNavbar() {
   const [size, setSize] = useState(localStorage.getItem("fontSize") ?? 100);

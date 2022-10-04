@@ -3,7 +3,7 @@ import { useEffect, useState, useContext } from "react";
 import i18n from "../i18";
 import { Context } from "../components/Context";
 
-// {i18n.gettext("howItWorks")}
+// {i18n.gettext("contactUs")}
 
 export default function Homepage() {
   useContext(Context);
@@ -61,11 +61,11 @@ export default function Homepage() {
           <h1> {i18n.gettext("asPatient")}</h1>
         </div>
         <div className="mr-5 text-end">
-          <h1 className="text-4xl ">Be part of our </h1>
-          <h1 className="text-4xl ">medical team</h1>
+          <h1 className="text-4xl ">{i18n.gettext("bePartOfTeam")} </h1>
+          {/* <h1 className="text-4xl ">medical team</h1> */}
 
-          <h2 className="text-2xl lowercase first-letter:uppercase ">
-            Get matched with patients that fit into your area of expertise.
+          <h2 className="text-lg lowercase font-light first-letter:uppercase">
+            {i18n.gettext("getMatchedWithPatients")}
           </h2>
         </div>
         <div className="div--joinBackwardsTriangle uppercase text-4xl font-bold">

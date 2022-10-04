@@ -32,6 +32,17 @@ const en = {
   bePartOfTeam: "Be part of our medical team",
   getMatchedWithPatients:
     "Get match with patients that fit into your area of expertise.",
+
+  //FOOTER
+  contactUs: "Contact us",
+  findUsOn: "Find us on",
+  aboutUs: "About us",
+  dataPrivacy: "Data Privacy",
+
+  // PAGE--SuccessPage
+  successTitle: "Congratulations!",
+  successText: "Your registration has been submitted successfully.",
+  successText2: "We will let you know when you have a match.",
 };
 
 export default en;

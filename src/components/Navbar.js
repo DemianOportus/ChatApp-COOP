@@ -1,8 +1,11 @@
 import profile from "./images/profile.png";
 import { Menu } from "@headlessui/react";
 import i18n from "../i18";
+import { useContext } from "react";
+import { Context } from "./Context";
 
 function Navbar() {
+  useContext(Context);
   function MyDropdown() {
     return (
       <Menu>
@@ -28,7 +31,7 @@ function Navbar() {
             <Menu.Item className="py-4">
               {({ active }) => (
                 <a href="/" className={`${active}`}>
-                  About us
+                  {i18n.gettext("aboutUs")}
                 </a>
               )}
             </Menu.Item>
@@ -50,7 +53,7 @@ function Navbar() {
         </div>
         <div className="text-[1rem] pb-[20px] pt-[30px]">
           <p>CHAT</p>
-          <p>Clinic of the future</p>
+          <p>{i18n.gettext("clinicOfTheFuture")}</p>
         </div>
       </div>
       <MyDropdown />
