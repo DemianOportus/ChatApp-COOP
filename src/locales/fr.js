@@ -13,13 +13,13 @@ const fr = {
   welcomeToChat: "Bienvenue chez Chat",
   whatWeOffer:
     "Nous proposons un système unique qui vous associe à un médecin en fonction de vos préférences et des préférences de nos médecins.",
-  getMatched: "Mettez-vous avec un médicine",
+  getMatched: "Enregistrez-vous à un médicin",
   weAccept:
     "Nous acceptons les patients seuls jusqu'à ce que nous les mettions en relation avec l'un de nos médecins.",
   howItWorks: "Comment fonctionne le 'match'",
 
   // Homepage -- Bullet points How the match works
-  ul1: "Visitez le lien « S'inscrire en tant que patient » pour commencer votre inscription",
+  ul1: "Visitez le lien « S'enregistrer en tant que patient » pour commencer votre inscription",
   ul2: "Remplissez un questionnaire",
   ul3: "Recevez une notification par e-mail et/ou par téléphone sur les correspondances potentielles en fonction de vos préférences",
   ul4: "Appelez le cabinet/médecin de famille et prenez votre premier rendez-vous",
@@ -27,7 +27,7 @@ const fr = {
   ul6: "Vos besoins ont changé? Soumettre un nouveau questionnaire et initier un nouveau jumelage",
   ul7: "No matches? You will be placed in a queue and receive monthly status updates (up to 6 months, unsubscribe anytime)",
   //Homepage -- Triangles
-  join: "joignez",
+  join: "rejoignez",
   asPatient: "en tant que patient",
   asDoctor: "en tant que docteur",
   bePartOfTeam: "Faites partie de notre équipe médicale",
