@@ -15,13 +15,14 @@ module.exports = {
         myVeryLightBlue: "#88CCEE",
         myLightBlue: "#51a2da",
         myDarkBlue: "#4e7ca5",
-        myOceanBlue: "#0072b2",
+        myFooterBlue: "#C2CEE5",
 
         // GRAY-ISH COLOURS
         myVeryLightBlue2: "#CEDAEF",
         myLightBlueGrayish: "#C2CEE5",
         myWhite: "#EAE8E8",
         myDarkGray: "#2D2D2D",
+        myDefaultGrey: "#50545B",
 
         // RED/PINK/YELLOW/ORANGE
         myPinkReddish: "#CC6677",
@@ -31,6 +32,8 @@ module.exports = {
         // GREEN COLOURS
         myDarkGreen: "#117733",
         myLightGreen: "#44AA99",
+
+        myDarkPurple: "#2f1a45",
       },
 
       fontFamily: {
@@ -53,6 +56,8 @@ module.exports = {
         vogue: "'Vogue', sans-serif", // Vogue 400
 
         futura: "'Futura Std', sans-serif",
+
+        myriad: "'Myriad Pro', sans-serif",
       },
     },
   },

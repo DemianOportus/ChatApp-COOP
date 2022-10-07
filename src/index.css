@@ -33,7 +33,7 @@ html {
 
 .div--joinTriangle {
   width: fullWidth;
-  background: #444;
+  background: #2f1a45;
   color: #fafafa;
   clip-path: polygon(0 0, 0 100%, 100% 100%);
   padding-top: 50px;
@@ -44,7 +44,7 @@ html {
 
 .div--joinBackwardsTriangle {
   width: fullWidth;
-  background: #444;
+  background: #2f1a45;
   color: #fafafa;
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
   padding-top: 50px;

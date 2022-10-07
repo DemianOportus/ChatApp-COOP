@@ -10,7 +10,7 @@ function Footer() {
   let thisYear = date.getFullYear();
 
   return (
-    <div className="mt-20">
+    <div className=" bg-myFooterBlue pt-7">
       <div className="flex justify-between px-[30px] pb-[15px] md:justify-evenly ">
         <div>
           <p className="uppercase font-bold">{i18n.gettext("contactUs")}</p>
@@ -34,20 +34,22 @@ function Footer() {
             className="w-[4rem] mx-[15px] rounded-full"
           />
         </div>
-        <div className="text-[.6rem] pb-[30px] pt-[30px]">
-          <p>CHAT</p>
+        <div className="text-sm font-semibold pb-[30px] pt-[30px]">
+          <p>CHAT APP</p>
+          <hr className="border-black" />
           <p>{i18n.gettext("clinicOfTheFuture")}</p>
         </div>
       </div>
-      <div className="text-center bg-[#323239] text-white pt-[20px] pb-[50px]">
+      <div className="text-center mt-7 bg-[#323239] text-white pt-[20px] pb-[50px]">
         <p className="uppercase pb-[10px]">
           {i18n.gettext("joinPatient")} / {i18n.gettext("joinDoctor")}
         </p>
         <p className="uppercase pb-[10px]">
           {i18n.gettext("aboutUs")} / {i18n.gettext("dataPrivacy")}
         </p>
-        <p className="text-[.55rem] text-gray-300">
-          {thisYear} CHAT {i18n.gettext("clinicOfTheFuture")}
+        <p className="text-sm text-gray-300">
+          {thisYear} CHAT {i18n.gettext("clinicOfTheFuture")} | All rights
+          reserved
         </p>
       </div>
     </div>

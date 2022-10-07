@@ -16,7 +16,7 @@ const en = {
   getMatched: "Get matched to a doctor",
   weAccept:
     "We accept unattached patients until we match them with one of our doctors.",
-  howItWorks: "how the match works",
+  howItWorks: "how the 'match' works",
 
   // Homepage -- Bullet points How the match works
   ul1: "Visit the ‘Register as a patient’ link to begin your registration",

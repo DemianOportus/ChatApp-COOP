@@ -8,9 +8,11 @@ import { Context } from "../components/Context";
 export default function Success() {
   useContext(Context);
   return (
-    <div className="text-center mx-auto md:max-w-xl ">
+    <div className="text-center mx-auto text-myDefaultGrey mb-32 md:max-w-xl">
       <div className="text-center mt-28 uppercase mx-auto md:max-w-xl ">
-        <h1 className="text-4xl block mb-10">{i18n.gettext("successTitle")}</h1>
+        <h1 className="text-4xl  block mb-10">
+          {i18n.gettext("successTitle")}
+        </h1>
       </div>
 
       <div className="ml-0  text-center sm:ml-4 md:max-w-lg">

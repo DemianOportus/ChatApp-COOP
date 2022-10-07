@@ -1,8 +1,9 @@
 import { Navigate, Outlet } from "react-router-dom";
 
 const useAuth = () => {
-  const user = { loggedIn: true }; // to let me in
-  return user & user.loggedIn;
+  const user = true;
+  const loggedIn = true;
+  return user & loggedIn;
 };
 
 const ProtectedRoutes = () => {
