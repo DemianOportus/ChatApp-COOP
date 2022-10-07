@@ -43,6 +43,21 @@ const en = {
   successTitle: "Congratulations!",
   successText: "Your registration has been submitted successfully.",
   successText2: "We will let you know when you have a match.",
+
+  // PAGE--DataPrivacy
+  dataPrivacyTitle: "Data privacy",
+  howWeUseYourDataTitle: "How we use your data",
+  howWeUseYourDataDescription:
+    "Continuity Health Attachment Technology (CHAT) takes your data privacy seriously. You data is completely private. We do not share or sell your data. Your data may be used internally at CHAT any by our team of healthcare workers in the following ways:",
+  howWeUseYourDataBulletPoint1:
+    "We use your data to run our orginization. Example: using your contact information to send you updates..",
+  howWeUseYourDataBulletPoint2:
+    "To find you a doctor through the use of our matching algorithms and machine learning.",
+  howWeUseYourDataBulletPoint3:
+    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+  howWeProtectYourDataTitle: "How we protect your data",
+  howWeProtectYourDataDescription:
+    "Continuity Health Attachment Technology (CHAT) uses end-to-end encrpytion to ensure the highest level of security for your data. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 };
 
 export default en;

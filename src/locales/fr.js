@@ -44,6 +44,21 @@ const fr = {
   successTitle: "Félicitations!",
   successText: "Votre inscription a été soumise avec succès.",
   successText2: "Nous vous informerons lorsque vous aurez une correspondance.",
+
+  // PAGE--DataPrivacy
+  dataPrivacyTitle: "Confidentialité des données",
+  howWeUseYourDataTitle: "Comment nous utilisons vos données",
+  howWeUseYourDataDescription:
+    "Continuity Health Attachment Technology (CHAT) prend la confidentialité de vos données au sérieux. Vos données sont entièrement privées. Nous ne partageons ni ne vendons vos données. Vos données peuvent être utilisées en interne chez CHAT par notre équipe de professionnels de la santé des manières suivantes :",
+  howWeUseYourDataBulletPoint1:
+    "Nous utilisons vos données pour gérer notre organisation. Exemple : utiliser vos informations de contact pour vous envoyer des mises à jour..",
+  howWeUseYourDataBulletPoint2:
+    "Pour vous trouver un médecin grâce à l'utilisation de nos algorithmes d'appariement et de l'apprentissage automatique.",
+  howWeUseYourDataBulletPoint3:
+    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+  howWeProtectYourDataTitle: "Comment nous protégeons vos données",
+  howWeProtectYourDataDescription:
+    "Continuity Health Attachment Technology (CHAT) utilise le cryptage de bout en bout pour assurer le plus haut niveau de sécurité pour vos données. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 };
 
 export default fr;

@@ -18,7 +18,7 @@ export default function Homepage() {
         </h1>
         {/* Polygon Shape text */}
         <div className="div--triangle">
-          <h2 className="text-2xl font-normal block lowercase first-letter:uppercase">
+          <h2 className="text-2xl font-light block lowercase first-letter:uppercase">
             {i18n.gettext("whatWeOffer")}
           </h2>
         </div>
