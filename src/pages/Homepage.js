@@ -8,17 +8,17 @@ import { Context } from "../components/Context";
 export default function Homepage() {
   useContext(Context);
   return (
-    <div className="text-center mt-10 uppercase mx-auto md:max-w-xl ">
-      <div className="text-center mt-10 uppercase mx-auto md:max-w-xl text-myDefaultGrey">
-        <h1 className="text-4xl font-bold block">
+    <div className="text-center mt-10  mx-auto md:max-w-xl ">
+      <div className="text-center mt-10  mx-auto md:max-w-xl text-myDefaultGrey">
+        <h1 className="text-4xl font-bold block uppercase">
           {i18n.gettext("welcomeToChat")}
         </h1>
-        <h1 className="text-4xl font-bold block">
+        <h1 className="text-4xl font-bold block uppercase">
           {i18n.gettext("clinicOfTheFuture")}
         </h1>
         {/* Polygon Shape text */}
         <div className="div--triangle">
-          <h2 className="text-2xl font-light block lowercase first-letter:uppercase">
+          <h2 className="text-2xl font-light block">
             {i18n.gettext("whatWeOffer")}
           </h2>
         </div>
@@ -36,18 +36,18 @@ export default function Homepage() {
           ></iframe>
         </div>
 
-        <div className="ml-0 text-start uppercase sm:ml-4 md:max-w-lg">
+        <div className="ml-2 text-start sm:ml-4 md:max-w-lg">
           <h1 className="text-4xl font-raleway font-normal block uppercase">
             {i18n.gettext("getMatched")}
           </h1>
 
           <div className="mt-4">
-            <h2 className="text-xl block">{i18n.gettext("weAccept")}</h2>
+            <h2 className="text-2xl block">{i18n.gettext("weAccept")}</h2>
             <div className="mt-4">
-              <h2 className="text-2xl font-raleway font-medium block uppercase">
+              <h2 className="text-2xl font-raleway font-medium block uppercase ">
                 {i18n.gettext("howItWorks")}
               </h2>
-              <ol>
+              <ol className="text-2xl">
                 <li>{i18n.gettext("ul1")}</li>
                 <li>{i18n.gettext("ul2")}</li>
                 <li>{i18n.gettext("ul3")}</li>

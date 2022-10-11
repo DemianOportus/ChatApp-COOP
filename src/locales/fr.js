@@ -59,6 +59,15 @@ const fr = {
   howWeProtectYourDataTitle: "Comment nous protégeons vos données",
   howWeProtectYourDataDescription:
     "Continuity Health Attachment Technology (CHAT) utilise le cryptage de bout en bout pour assurer le plus haut niveau de sécurité pour vos données. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+
+  // PAGE -- À propos de nous
+
+  aboutUsTitle: "À propos de nous",
+  aboutUsDescription:
+    "Continuity Health Attachment Technology (CHAT) est un service de jumelage reliant les patients sans médecin de famille à un médecin de famille au sein de leur communauté et des zones environnantes. Le jumelage est basé sur les besoins sanitaires et sociaux des patients et des médecins de famille. Le service intègre un système centralisé système de registre des listes d'attente accessible dans toutes les provinces pour servir tous les Canadiens.",
+  aboutUsPartnersTitle: "Partenaires",
+  aboutUsPartnersDescription:
+    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 };
 
 export default fr;

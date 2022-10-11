@@ -16,21 +16,21 @@ function Navbar() {
           <Menu.Items className="list-none flex flex-col pr-[20px] text-right bg-gray-100 text-black text-xl">
             <Menu.Item className="py-4 ">
               {({ active }) => (
-                <a href="/" className={`${active}`}>
+                <a href="/join-as-a-patient" className={`${active}`}>
                   {i18n.gettext("joinPatient")}
                 </a>
               )}
             </Menu.Item>
             <Menu.Item className="py-4">
               {({ active }) => (
-                <a href="/" className={`${active}`}>
+                <a href="/join-as-a-doctor" className={`${active}`}>
                   {i18n.gettext("joinDoctor")}
                 </a>
               )}
             </Menu.Item>
             <Menu.Item className="py-4">
               {({ active }) => (
-                <a href="/" className={`${active}`}>
+                <a rel="noreferrer" href="/about-us" className={`${active}`}>
                   {i18n.gettext("aboutUs")}
                 </a>
               )}

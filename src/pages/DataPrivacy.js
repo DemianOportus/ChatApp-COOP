@@ -25,7 +25,7 @@ export default function DataPrivacy() {
             <h2 className="font-myriad font-light text-2xl">
               {i18n.gettext("howWeUseYourDataDescription")}
             </h2>
-            <div className="mt-4 -ml-5 font-myriad font-light text-2xl ">
+            <div className="mt-4 font-myriad font-light text-2xl ">
               <ol>
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint1")}</li>
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint2")}</li>

@@ -15,7 +15,7 @@ export default function Success() {
         </h1>
       </div>
 
-      <div className="ml-0  text-center sm:ml-4 md:max-w-lg">
+      <div className="ml-0 text-center sm:ml-4 md:max-w-lg">
         <h1 className="text-2xl block ">{i18n.gettext("successText")}</h1>
         <h1 className="text-2xl block">{i18n.gettext("successText2")}</h1>
       </div>

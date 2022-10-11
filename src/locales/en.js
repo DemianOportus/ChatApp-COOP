@@ -58,6 +58,15 @@ const en = {
   howWeProtectYourDataTitle: "How we protect your data",
   howWeProtectYourDataDescription:
     "Continuity Health Attachment Technology (CHAT) uses end-to-end encrpytion to ensure the highest level of security for your data. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+
+  // PAGE -- About Us
+
+  aboutUsTitle: "About us",
+  aboutUsDescription:
+    "Continuity Health Attachment Technology (CHAT) is a matching service linking patients without a family doctor to a family doctor within their community and surrounding areas. The matching is based on health and social needs of both patients and family doctors.  The service integrates a centralized waiting list registry system that is accessible across all provinces to serve all Canadians.",
+  aboutUsPartnersTitle: "Partners",
+  aboutUsPartnersDescription:
+    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 };
 
 export default en;
