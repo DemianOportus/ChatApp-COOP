@@ -126,6 +126,12 @@ const fr = {
   genericSocialFrailityQuestion2: "2. Question sur la fragilité sociale",
   genericSocialFrailityQuestion3: "3. Question sur la fragilité sociale",
   submitRegistrationButton: "Soumettre l'inscription",
+
+  // PAGE -- Joindre en tant que docteur
+  li1: "Accédez au formulaire d'inscription.",
+  li2: "Remplir un questionnaire.",
+  li3: "Recevez une notification sur les correspondances potentielles en fonction de votre questionnaire.",
+  li4: "Accepter les patients.",
 };
 
 export default fr;

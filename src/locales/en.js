@@ -123,6 +123,12 @@ const en = {
   genericSocialFrailityQuestion2: "2. Social Fraility Question",
   genericSocialFrailityQuestion3: "3. Social Fraility Question",
   submitRegistrationButton: "Submit registration",
+
+  // Join as a doctor
+  li1: "Go to the registration form.",
+  li2: "Complete a questionnaire.",
+  li3: "Receive a notification about potential matches based on your questionnaire.",
+  li4: "Accept  patients.",
 };
 
 export default en;
