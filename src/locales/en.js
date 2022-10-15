@@ -67,6 +67,62 @@ const en = {
   aboutUsPartnersTitle: "Partners",
   aboutUsPartnersDescription:
     "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+
+  // PAGE -- Join as a patient
+  howToJoin: "How to join:",
+  registrationForm: "Registration form",
+  pleaseFillOut:
+    "Please fill out the form below to register. Or, if you prefer to register bye-mail, download theregistration form PDF (mb) here, however it takes longer to process applications done by e-mail.",
+  learnAboutWhyWeAsk:
+    "Learn about why we ask these question and how we protect your data",
+  boldListOfRegistration1: "Eligibility",
+  iAmCurrentlyWithoutDoctor:
+    "Im currently without a doctor and have not registered yet",
+  iAmCanadian: "I am a Canadian citizen",
+  boldListOfRegistration2: "Personal Information",
+  firstNameIs: "First name",
+  lastNameIs: "Last name",
+  dateOfBirthIs: "Date of Birth (yy/mm/dd)",
+  homeAddressIs: "Home Address",
+  provinceIs: "Province",
+  boldListOfRegistration3: "Location",
+  usesYourPostalCode:
+    "CHAT uses your postal code to locate doctors in your area.",
+  postalCodeIs: "Postal Code",
+  boldListOfRegistration4: "Communications",
+  emailAddressIs: "E-mail",
+  phoneNumberIs: "Phone Number",
+  languagePreference: "Language Preference",
+  boldListOfRegistration5: "Health Information",
+  genericQuestionsAboutPhysicalHealth:
+    "Generic questions about physical health",
+  genericPhysicalQuestion1: "1. Physical Question",
+  genericPhysicalQuestion2: "2. Physical Question",
+  genericPhysicalQuestion3: "3. Physical Question",
+  genericQuestionsAboutMentalHealth: "Generic questions about mental health",
+  genericMentalQuestion1: "1. Mental Question",
+  genericMentalQuestion2: "2. Mental Question",
+  genericMentalQuestion3: "3. Mental Question",
+  genericQuestionsAboutSocialHealth: "Generic questions about Social health",
+  genericSocialQuestion1: "1. Social Question",
+  genericSocialQuestion2: "2. Social Question",
+  genericSocialQuestion3: "3. Social Question",
+  genericQuestionsAboutSocialComplexCareHealth:
+    "Generic questions about Social Complex Care health",
+  genericSocialComplexCareQuestion1: "1. Social Complex Care Question",
+  genericSocialComplexCareQuestion2: "2. Social Complex Care Question",
+  genericSocialComplexCareQuestion3: "3. Social Complex Care Question",
+  genericQuestionsAboutSocialChronicDisease:
+    "Generic questions about Social Chronic Diseaseh",
+  genericSocialChronicDisease1: "1. Social Chronic Disease Question",
+  genericSocialChronicDisease2: "2. SocialChronicDisease Question",
+  genericSocialChronicDisease3: "3. SocialChronicDisease Question",
+  genericQuestionsAboutSocialFraility:
+    "Generic questions about Social fraility",
+  genericSocialFrailityQuestion1: "1. Social Fraility Question",
+  genericSocialFrailityQuestion2: "2. Social Fraility Question",
+  genericSocialFrailityQuestion3: "3. Social Fraility Question",
+  submitRegistrationButton: "Submit registration",
 };
 
 export default en;

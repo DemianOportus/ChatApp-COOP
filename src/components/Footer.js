@@ -67,10 +67,10 @@ function Footer() {
           /{" "}
           <a
             rel="noreferrer"
-            href="/dataprivacy"
+            href="/data-privacy"
             className="hover:text-blue-600"
           >
-            {i18n.gettext("data-privacy")}
+            {i18n.gettext("dataPrivacyTitle")}
           </a>
         </p>
         <p className="text-sm text-gray-300">

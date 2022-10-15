@@ -19,7 +19,7 @@ module.exports = {
 
         // GRAY-ISH COLOURS
         myVeryLightBlue2: "#CEDAEF",
-        myLightBlueGrayish: "#C2CEE5",
+        myInputGray: "#E9ECF2",
         myWhite: "#EAE8E8",
         myDarkGray: "#2D2D2D",
         myDefaultGrey: "#50545B",

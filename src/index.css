@@ -84,3 +84,14 @@ li {
 ol > li::marker {
   font-weight: bold;
 }
+
+/* Button Style*/
+.btn {
+  @apply font-bold font-raleway py-2 px-4 rounded-xl;
+}
+.btn-orange {
+  @apply bg-myOrange text-white;
+}
+.btn-orange:hover {
+  @apply bg-myYellow;
+}

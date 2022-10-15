@@ -68,6 +68,64 @@ const fr = {
   aboutUsPartnersTitle: "Partenaires",
   aboutUsPartnersDescription:
     "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
+
+  // PAGE -- S'inscrire en tant que patient
+  howToJoin: "Comment rejoindre :",
+  registrationForm: "Formulaire d'inscription",
+  pleaseFillOut:
+    "Veuillez remplir le formulaire ci-dessous pour vous inscrire. Ou, si vous préférez vous inscrire par e-mail, téléchargez le formulaire d'inscription PDF (mb) ici, cependant le traitement des demandes par e-mail prend plus de temps.",
+  LearnAboutWhyWeAsk:
+    "Découvrez pourquoi nous posons ces questions et comment nous protégeons vos données",
+  boldListOfRegistration1: "Éligibilité",
+  iAmCurrentlyWithoutDoctor:
+    "Je suis actuellement sans médecin et je ne suis pas encore inscrit",
+  iAmCanadian: "Je suis un citoyen canadien",
+  boldListOfRegistration2: "Informations personnelles",
+  firstNameIs: "Prénom",
+  lastNameIs: "Nom de famille",
+  dateOfBirthIs: "Date de naissance (aa/mm/jj)",
+  homeAddressIs: "Adresse du domicile",
+  provinceIs: "Province",
+  boldListOfRegistration3: "Emplacement",
+  usesYourPostalCode:
+    "CHAT utilise votre code postal pour localiser les médecins dans votre région.",
+  postalCodeIs: "Code postal",
+  boldListOfRegistration4: "Communication",
+  emailAddressIs: "E-mail",
+  phoneNumberIs: "Numéro de téléphone",
+  languagePreference: "Préférence de langue",
+  boldListOfRegistration5: "Informations sur la santé",
+  questionsgénériquessurlasantéphysique:
+    "Questions génériques sur la santé physique",
+  genericPhysicalQuestion1: "1. Question physique",
+  genericPhysicalQuestion2: "2. Question physique",
+  genericPhysicalQuestion3: "3. Question physique",
+  genericQuestionsAboutMentalHealth:
+    "Questions génériques sur la santé mentale",
+  genericMentalQuestion1: "1. Question mentale",
+  genericMentalQuestion2: "2. Question mentale",
+  genericMentalQuestion3: "3. Question mentale",
+  genericQuestionsAboutSocialHealth:
+    "Questions génériques sur la santé sociale",
+  genericSocialQuestion1: "1. Question sociale",
+  genericSocialQuestion2: "2. Question sociale",
+  genericSocialQuestion3: "3. Question sociale",
+  genericQuestionsAboutSocialComplexCareHealth:
+    "Questions génériques sur la santé de SocialComplexCare",
+  genericSocialComplexCareQuestion1: "1. Question Social Complex Care",
+  genericSocialComplexCareQuestion2: "2. Question Social Complex Care",
+  genericSocialComplexCareQuestion3: "3. Question Social ComplexCare",
+  genericQuestionsAboutSocialChronicDisease:
+    "Questions génériques sur SocialChronicDiseaseh",
+  genericSocialChronicDisease1: "1. Social Chronic Disease",
+  genericSocialChronicDisease2: "2. Social Chronic Disease",
+  genericSocialChronicDisease3: "3. SocialChronicDisease",
+  genericQuestionsAboutSocialFraility:
+    "Questions génériques sur la fragilité sociale",
+  genericSocialFrailityQuestion1: "1. Question sur la fragilité sociale",
+  genericSocialFrailityQuestion2: "2. Question sur la fragilité sociale",
+  genericSocialFrailityQuestion3: "3. Question sur la fragilité sociale",
+  submitRegistrationButton: "Soumettre l'inscription",
 };
 
 export default fr;
