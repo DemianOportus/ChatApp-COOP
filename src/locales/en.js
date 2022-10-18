@@ -72,7 +72,7 @@ const en = {
   howToJoin: "How to join:",
   registrationForm: "Registration form",
   pleaseFillOut:
-    "Please fill out the form below to register. Or, if you prefer to register bye-mail, download theregistration form PDF (mb) here, however it takes longer to process applications done by e-mail.",
+    "Please fill out the form below to register. Or, if you prefer to register by email, download the registration form PDF (mb) here, however it takes longer to process applications done by e-mail.",
   learnAboutWhyWeAsk:
     "Learn about why we ask these question and how we protect your data",
   boldListOfRegistration1: "Eligibility",
@@ -129,6 +129,15 @@ const en = {
   li2: "Complete a questionnaire.",
   li3: "Receive a notification about potential matches based on your questionnaire.",
   li4: "Accept  patients.",
+  dropdown1: "what makes this solution different",
+  dropdown2: "how to use this solution in your practice",
+  dropdown3: "incentives for onboarding new patients",
+  personalInformation: "Personal Information",
+  professionalInformation: "Professional Information",
+  practiceName: "Practice name:",
+  providerName: "Provider's name:",
+  numberOfSpots: "Number of available spots for patients:",
+  officeAddress: "Office Address:",
 };
 
 export default en;
