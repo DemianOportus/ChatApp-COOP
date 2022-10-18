@@ -132,6 +132,15 @@ const fr = {
   li2: "Remplir un questionnaire.",
   li3: "Recevez une notification sur les correspondances potentielles en fonction de votre questionnaire.",
   li4: "Accepter les patients.",
+  dropdown1: "ce qui rend cette solution différente",
+  dropdown2: "comment utiliser cette solution dans votre pratique",
+  dropdown3: "incitations à l'intégration de nouveaux patients",
+  personalInformation: "Information personnelle",
+  professionalInformation: "Information professionelle",
+  practiceName: "Nom de la pratique:",
+  providerName: "Nom du fournisseur:",
+  numberOfSpots: "Nombre de places disponibles pour les patients:",
+  officeAddress: "Adresse de bureau:",
 };
 
 export default fr;
