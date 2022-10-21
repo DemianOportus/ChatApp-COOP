@@ -1,5 +1,5 @@
 import "../index.css";
-import { useEffect, useState, useContext } from "react";
+import { useState, useContext } from "react";
 import i18n from "../i18";
 import { Context } from "../components/Context";
 import UserInput from "../components/userInput";
@@ -129,7 +129,7 @@ export default function JoinAsADoctor() {
                 {i18n.gettext("learnAboutWhyWeAsk")}
               </h2>
               <div className="mt-4 font-[myriadLight] text-2xl ">
-                <ol>
+                <ol className="font-[myriadRegular]">
                   <li className="font-[myriadBold]">
                     {i18n.gettext("personalInformation")}
                   </li>
@@ -172,8 +172,8 @@ export default function JoinAsADoctor() {
                   />  
                   <li className="font-[myriadBold]">
                     <h2>{i18n.gettext("languagePreference")}</h2>
-                    <p>{i18n.gettext("selectLanguage")}</p>
                   </li>
+                  <p className="pb-6">{i18n.gettext("selectLanguage")}</p>
                   <div className="pl-3">
                     <Checkbox
                       id="englishCheckbox"
@@ -216,7 +216,7 @@ export default function JoinAsADoctor() {
                   <li className="font-[myriadBold]">
                     {i18n.gettext("yourSpecializations")}
                   </li>
-                  <p>{i18n.gettext("physicianSpecialties")}</p>
+                  <p className="pb-6">{i18n.gettext("physicianSpecialties")}</p>
 
                   <Checkbox
                     id="allergyAndImmunologyCheckbox"
@@ -256,7 +256,7 @@ export default function JoinAsADoctor() {
                   />
                   <Checkbox
                     id="nuclearMedicineCheckbox"
-                    option={i18n.gettext("nuclearMedicinesOption")}
+                    option={i18n.gettext("nuclearMedicineOption")}
                   />
                   <Checkbox
                     id="obstetricsAndGynaecologyCheckbox"
@@ -298,9 +298,117 @@ export default function JoinAsADoctor() {
                     id="urologyCheckbox"
                     option={i18n.gettext("urologyOption")}
                   />
+                  <Checkbox
+                    id="otherSpecialtiesCheckbox"
+                    option={i18n.gettext("otherSpecialtiesOption")}
+                  />
+                  <UserInput
+                    type="text"
+                    id="otherSpecialtiesInput"
+                  /> 
+
+                  <p className="py-6">{i18n.gettext("physicianChronicIllnessSpecialties")}</p>
+                      <Checkbox
+                        id="ALSCheckbox"
+                        option={i18n.gettext("ALSOption")}
+                      />
+                      <Checkbox
+                        id="alzheimersCheckbox"
+                        option={i18n.gettext("alzheimersOption")}
+                      />
+                      <Checkbox
+                        id="arthritisCheckbox"
+                        option={i18n.gettext("arthritisOption")}
+                      />
+                      <Checkbox
+                        id="asthmaCheckbox"
+                        option={i18n.gettext("asthmaOption")}
+                      />
+                      <Checkbox
+                        id="cancerCheckbox"
+                        option={i18n.gettext("cancerOption")}
+                      />
+                      <Checkbox
+                        id="chronicObstructiveCheckbox"
+                        option={i18n.gettext("chronicObstructiveOption")}
+                      />
+                      <Checkbox
+                        id="crohnsCheckbox"
+                        option={i18n.gettext("crohnsOption")}
+                      />
+                      <Checkbox
+                        id="cysticFibrosisCheckbox"
+                        option={i18n.gettext("cysticFibrosisOption")}
+                      />
+                      <Checkbox
+                        id="otherChronicIllnessSpecialtiesCheckbox"
+                        option={i18n.gettext("otherChronicIllnessSpecialtiesOption")}
+                      />
+                      <UserInput
+                        type="text"
+                        id="otherChronicIllnessSpecialtiesInput"
+                      />
+
+                    <p className="py-6">{i18n.gettext("physicianMentalHealthSpecialties")}</p>
+                      <Checkbox
+                        id="alcoholAddictinCheckbox"
+                        option={i18n.gettext("alcoholAddictionOption")}
+                      />
+                      <Checkbox
+                        id="prescriptionDrugAddictionCheckbox"
+                        option={i18n.gettext("prescriptionDrugAddictionOption")}
+                      />
+                      <Checkbox
+                        id="drugAddictionCheckbox"
+                        option={i18n.gettext("drugAddictionOption")}
+                      />
+                      <Checkbox
+                        id="heroinAddictionCheckbox"
+                        option={i18n.gettext("heroinAddictionOption")}
+                      />
+                      <Checkbox
+                        id="opioidAddictionCheckbox"
+                        option={i18n.gettext("opioidAddictionOption")}
+                      />
+                      <Checkbox
+                        id="moodDisordersCheckbox"
+                        option={i18n.gettext("moodDisordersOption")}
+                      />
+                      <Checkbox
+                        id="schizophreniaCheckbox"
+                        option={i18n.gettext("schizophreniaOption")}
+                      />
+                      <Checkbox
+                        id="anxietyDisordersCheckbox"
+                        option={i18n.gettext("anxietyDisordersOption")}
+                      />
+                      <Checkbox
+                        id="personalityDisordersCheckbox"
+                        option={i18n.gettext("personalityDisordersOption")}
+                      />
+                      <Checkbox
+                        id="eatingDisordersCheckbox"
+                        option={i18n.gettext("eatingDisordersOption")}
+                      />
+                      <Checkbox
+                        id="problemGamblingCheckbox"
+                        option={i18n.gettext("problemGamblingOption")}
+                      />
+                      <Checkbox
+                        id="substanceDependencyCheckbox"
+                        option={i18n.gettext("substanceDependencyOption")}
+                      />
+                    <Checkbox
+                        id="otherMentalHealthSpecialtiesCheckbox"
+                        option={i18n.gettext("otherMentalHealthSpecialties")}
+                      />
+                    <UserInput
+                      type="text"
+                      id="otherMentalHealthSpecialtiesInput"
+                    />
                 </ol>
               </div>
-              <button className="btn btn-orange">Submit registration</button>
+              <button className="btn btn-orange my-6">Submit registration</button>
             </div>
           </div>
         </div>

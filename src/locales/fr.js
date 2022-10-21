@@ -151,7 +151,19 @@ const fr = {
   portugueseOption: "7. Portuguais",
   otherLanguagesOption: "8. Autres:",
   yourSpecializations: "Vos spécialisations",
-  physicianSpecialties: "Spécialités médicales qui s'appliquent à vous ::"
+  physicianSpecialties: "Spécialités médicales qui s'appliquent à vous :",
+  otherSpecialtiesOption: "21. Autre:",
+
+  physicianChronicIllnessSpecialties: "Spécialités des maladies chroniques des médecins:",
+  ALSOption: "1. SLA (maladie de Lou Gehrig)",
+  alzheimersOption: "2. Maladie d'Alzheimer et autres démences",
+  arthritisOption: "3. Arthrite",
+  asthmaOption: "4. Asthme",
+  cancerOption: "5. Cancer",
+  chronicObstructiveOption: "6. Maladie pulmonaire obstructive chronique (MPOC)",
+  crohnsOption: "7. Maladie de Crohn, colite ulcéreuse, autres maladies inflammatoires de l'intestin, syndrome du côlon irritable",
+  cysticFibrosisOption: "8. Fibrose kystique",
+  otherChronicIllnessSpecialtiesOption: "9. Autres:",
 };
 
 export default fr;

@@ -169,8 +169,33 @@ const en = {
   radiationOncologyOption: "18. Radiation oncology",
   surgeryOption: "19. Sugery",
   urologyOption: "20. Urology",
+  otherSpecialtiesOption: "21. Other:",
 
+  physicianChronicIllnessSpecialties: "Physician chronic illness specialties:",
+  ALSOption: "1. ALS (Lou Gehrig’s Disease)",
+  alzheimersOption: "2. Alzheimer’s Disease and other Dementias",
+  arthritisOption: "3. Arthritis",
+  asthmaOption: "4. Asthma",
+  cancerOption: "5. Cancer",
+  chronicObstructiveOption: "6. Chronic Obstructive Pulmonary Disease (COPD)",
+  crohnsOption: "7. Crohn’s Disease, Ulcerative Colitis, Other Inflammatory Bowel Diseases, Irritable Bowel Syndrome",
+  cysticFibrosisOption: "8. Cystic Fibrosis",
+  otherChronicIllnessSpecialtiesOption: "9. Others:",
 
+  physicianMentalHealthSpecialties: "Physician chronic mental health & addictions specialties:",
+  alcoholAddictionOption: "1. Alcohol addiction",
+  prescriptionDrugAddictionOption: "2. Prescription drug addiction",
+  drugAddictionOption: "3. Drug addiction",
+  heroinAddictionOption: "4. Heroin addiction",
+  opioidAddictionOption: "5. Opioid addiction",
+  moodDisordersOption: "6. Mood disorders: major depression and bipolar disorder",
+  schizophreniaOption: "7. Schizophrenia",
+  anxietyDisordersOption: "8. Anxiety disorders",
+  personalityDisordersOption:  "9. Personality disorders",
+  eatingDisordersOption: "10. Eating disorders",
+  problemGamblingOption: "11. Problem gambling",
+  substanceDependencyOption: "12. Substance dependency",
+  otherMentalHealthSpecialties: "13. Others:"
 
 };
 
