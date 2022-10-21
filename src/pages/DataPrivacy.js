@@ -11,21 +11,21 @@ export default function DataPrivacy() {
     <div className=" md:max-w-xl max-w-sm mx-auto ">
       <div className="mt-10 text-myDefaultGrey">
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold uppercase block">
+          <h1 className="text-4xl font-[myriadBold] uppercase block">
             {i18n.gettext("dataPrivacyTitle")}
           </h1>
         </div>
 
         <div className="ml-0  sm:ml-4 ">
-          <h1 className="text-4xl font-raleway font-normal block uppercase">
+          <h1 className="text-4xl font-[raleway] font-normal block uppercase">
             {i18n.gettext("howWeUseYourDataTitle")}
           </h1>
 
           <div className="mt-4">
-            <h2 className="font-myriad font-light text-2xl">
+            <h2 className="font-[myriadLight] text-2xl">
               {i18n.gettext("howWeUseYourDataDescription")}
             </h2>
-            <div className="mt-4 font-myriad font-light text-2xl ">
+            <div className="mt-4 font-[myriadLight] text-2xl ">
               <ol>
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint1")}</li>
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint2")}</li>
@@ -36,12 +36,12 @@ export default function DataPrivacy() {
         </div>
 
         <div className="text-start  mt-10 sm:ml-4 ">
-          <h1 className="text-4xl font-raleway font-normal block uppercase">
+          <h1 className="text-4xl font-[raleway] font-normal block uppercase">
             {i18n.gettext("howWeProtectYourDataTitle")}
           </h1>
 
           <div className="mt-4 mb-10">
-            <h2 className="font-myriad font-light text-2xl block">
+            <h2 className="font-[myriadLight] text-2xl block">
               {i18n.gettext("howWeProtectYourDataDescription")}
             </h2>
           </div>

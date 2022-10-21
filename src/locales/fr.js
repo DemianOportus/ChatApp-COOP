@@ -141,6 +141,17 @@ const fr = {
   providerName: "Nom du fournisseur:",
   numberOfSpots: "Nombre de places disponibles pour les patients:",
   officeAddress: "Adresse de bureau:",
+  selectLanguage: "Dans quelle langue préférez-vous communiquer avec les patients (sélectionnez tout ce qui s'applique) :",
+  englishOption: "1. Anglais",
+  frenchOption: "2. Français",
+  spanishOption: "3. Espagnol",
+  arabicOption: "4. Arabe",
+  chineseOption: "5. Chinois",
+  japaneseOption: "6. Japonais",
+  portugueseOption: "7. Portuguais",
+  otherLanguagesOption: "8. Autres:",
+  yourSpecializations: "Vos spécialisations",
+  physicianSpecialties: "Spécialités médicales qui s'appliquent à vous ::"
 };
 
 export default fr;

@@ -11,7 +11,7 @@ export default function JoinAsAPatient() {
   return (
     <div className="text-center mt-10  mx-auto md:max-w-xl ">
       <div className="text-center mt-10  mx-auto md:max-w-xl text-myDefaultGrey">
-        <h1 className="text-4xl font-bold block uppercase">
+        <h1 className="text-4xl font-[raleway] font-bold block uppercase">
           {i18n.gettext("joinPatient")}
         </h1>
 
@@ -29,7 +29,7 @@ export default function JoinAsAPatient() {
         </div>
 
         <div className="ml-2 text-start sm:ml-4 md:max-w-lg">
-          <h1 className="text-4xl font-raleway font-normal block ">
+          <h1 className="text-4xl font-[raleway] font-normal block ">
             {i18n.gettext("howToJoin")}
           </h1>
 
@@ -48,26 +48,26 @@ export default function JoinAsAPatient() {
           </div>
         </div>
         <div className="ml-0  sm:ml-4 ">
-          <h1 className="text-4xl font-raleway font-normal block uppercase">
+          <h1 className="text-4xl font-[raleway] font-normal block uppercase">
             {i18n.gettext("registrationForm")}
           </h1>
           <div className="ml-3">
             <div className="mt-4 text-start">
-              <h2 className="font-myriad text-2xl">
+              <h2 className="font-[myriadRegular] text-2xl">
                 {i18n.gettext("pleaseFillOut")}
               </h2>
 
-              <h2 className="font-myriad text-2xl">
+              <h2 className="font-[myriadRegular] text-2xl">
                 {i18n.gettext("learnAboutWhyWeAsk")}
               </h2>
-              <div className="mt-4 font-myriad font-light text-2xl ">
+              <div className="mt-4 font-[myriadLight] text-2xl ">
                 <ol>
-                  <li className="font-bold">
+                  <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration1")}
                   </li>
                   <h1> {i18n.gettext("iAmCurrentlyWithoutDoctor")}</h1>
                   <h1> {i18n.gettext("iAmCanadian")}</h1>
-                  <li className="font-bold">
+                  <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration2")}
                   </li>
 
@@ -98,7 +98,7 @@ export default function JoinAsAPatient() {
                     id="provinceInput"
                   />
 
-                  <li className="font-bold">
+                  <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration3")}
                   </li>
                   <h1> {i18n.gettext("usesYourPostalCode")}</h1>
@@ -107,7 +107,7 @@ export default function JoinAsAPatient() {
                     type="text"
                     id="postalCodeInput"
                   />
-                  <li className="font-bold">
+                  <li className="font-[myriadbold]">
                     {i18n.gettext("boldListOfRegistration4")}
                   </li>
 
@@ -134,7 +134,7 @@ export default function JoinAsAPatient() {
                     id="languagePreferenceInput"
                   />
 
-                  <li className="font-bold">
+                  <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration5")}
                   </li>
                   <h1>
@@ -144,7 +144,7 @@ export default function JoinAsAPatient() {
                   <h1> {i18n.gettext("genericPhysicalQuestion1")}</h1>
                   <h1> {i18n.gettext("genericPhysicalQuestion2")}</h1>
                   <h1> {i18n.gettext("genericPhysicalQuestion3")}</h1>
-                  <li className="font-bold">
+                  <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration5")}
                   </li>
                   <h1>

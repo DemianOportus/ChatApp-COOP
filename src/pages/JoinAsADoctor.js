@@ -3,6 +3,7 @@ import { useEffect, useState, useContext } from "react";
 import i18n from "../i18";
 import { Context } from "../components/Context";
 import UserInput from "../components/userInput";
+import Checkbox from "../components/checkbox";
 
 export default function JoinAsADoctor() {
   useContext(Context);
@@ -115,21 +116,21 @@ export default function JoinAsADoctor() {
         </div>
 
         <div className="ml-0  sm:ml-4 ">
-          <h1 className="text-4xl font-raleway font-normal block uppercase">
+          <h1 className="text-4xl py-8 font-[raleway] text-center font-normal block uppercase">
             {i18n.gettext("registrationForm")}
           </h1>
           <div className="ml-3">
             <div className="mt-4 text-start">
-              <h2 className="font-myriad text-2xl">
+              <h2 className="font-[myriadRegular] text-2xl">
                 {i18n.gettext("pleaseFillOut")}
               </h2>
 
-              <h2 className="font-myriad text-2xl">
+              <h2 className="font-[myriadRegular] text-2xl">
                 {i18n.gettext("learnAboutWhyWeAsk")}
               </h2>
-              <div className="mt-4 font-myriad font-light text-2xl ">
+              <div className="mt-4 font-[myriadLight] text-2xl ">
                 <ol>
-                  <li className="font-bold">
+                  <li className="font-[myriadBold]">
                     {i18n.gettext("personalInformation")}
                   </li>
                   <UserInput
@@ -142,7 +143,7 @@ export default function JoinAsADoctor() {
                     type="text"
                     id="doctorLastNameInput"
                   />
-                  <li className="font-bold">
+                  <li className="font-[myriadBold]">
                     {i18n.gettext("professionalInformation")}
                   </li>
 
@@ -168,7 +169,135 @@ export default function JoinAsADoctor() {
                     myLabel={i18n.gettext("officeAddress")}
                     type="text"
                     id="officeAddressInput"
-                  />        
+                  />  
+                  <li className="font-[myriadBold]">
+                    <h2>{i18n.gettext("languagePreference")}</h2>
+                    <p>{i18n.gettext("selectLanguage")}</p>
+                  </li>
+                  <div className="pl-3">
+                    <Checkbox
+                      id="englishCheckbox"
+                      option={i18n.gettext("englishOption")}
+                    />
+                    <Checkbox
+                      id="frenchCheckbox"
+                      option={i18n.gettext("frenchOption")}
+                    />
+                    <Checkbox
+                      id="spanishCheckbox"
+                      option={i18n.gettext("spanishOption")}
+                    />
+                    <Checkbox
+                      id="arabicCheckbox"
+                      option={i18n.gettext("arabicOption")}
+                    />
+                    <Checkbox
+                      id="chineseCheckbox"
+                      option={i18n.gettext("chineseOption")}
+                    />
+                    <Checkbox
+                      id="japaneseCheckbox"
+                      option={i18n.gettext("japaneseOption")}
+                    />
+                    <Checkbox
+                      id="portugueseCheckbox"
+                      option={i18n.gettext("portugueseOption")}
+                    />
+                    <Checkbox
+                      id="otherLanguagesCheckbox"
+                      option={i18n.gettext("otherLanguagesOption")}
+                    />
+                    <UserInput
+                      type="text"
+                      id="otherLanguagesInput"
+                    /> 
+                  </div> 
+
+                  <li className="font-[myriadBold]">
+                    {i18n.gettext("yourSpecializations")}
+                  </li>
+                  <p>{i18n.gettext("physicianSpecialties")}</p>
+
+                  <Checkbox
+                    id="allergyAndImmunologyCheckbox"
+                    option={i18n.gettext("allergyAndImmunologyOption")}
+                  />
+                  <Checkbox
+                    id="anesthesiologyCheckbox"
+                    option={i18n.gettext("anesthesiologyOption")}
+                  />
+                  <Checkbox
+                    id="dermatologyCheckbox"
+                    option={i18n.gettext("dermatologyOption")}
+                  />
+                  <Checkbox
+                    id="diagnosticRadiologyCheckbox"
+                    option={i18n.gettext("diagnosticRadiologyOption")}
+                  />
+                  <Checkbox
+                    id="emergencyMedicineCheckbox"
+                    option={i18n.gettext("emergencyMedicineOption")}
+                  />
+                  <Checkbox
+                    id="familyMedicineCheckbox"
+                    option={i18n.gettext("familyMedicineOption")}
+                  />
+                  <Checkbox
+                    id="internalMedicineCheckbox"
+                    option={i18n.gettext("internalMedicineOption")}
+                  />
+                  <Checkbox
+                    id="medicalGeneticsCheckbox"
+                    option={i18n.gettext("medicalGeneticsOption")}
+                  />
+                  <Checkbox
+                    id="neurologyCheckbox"
+                    option={i18n.gettext("neurologyOption")}
+                  />
+                  <Checkbox
+                    id="nuclearMedicineCheckbox"
+                    option={i18n.gettext("nuclearMedicinesOption")}
+                  />
+                  <Checkbox
+                    id="obstetricsAndGynaecologyCheckbox"
+                    option={i18n.gettext("obstetricsAndGynaecologyOption")}
+                  />
+                  <Checkbox
+                    id="ophthalmologyCheckbox"
+                    option={i18n.gettext("ophthalmologyOption")}
+                  />
+                  <Checkbox
+                    id="pathologyCheckbox"
+                    option={i18n.gettext("pathologyOption")}
+                  />
+                  <Checkbox
+                    id="pediatricsCheckbox"
+                    option={i18n.gettext("pediatricsOption")}
+                  />
+                  <Checkbox
+                    id="physicalMedicineAndRehabCheckbox"
+                    option={i18n.gettext("physicalMedicineAndRehabOption")}
+                  />
+                  <Checkbox
+                    id="preventiveMedicineCheckbox"
+                    option={i18n.gettext("preventiveMedicineOption")}
+                  />
+                  <Checkbox
+                    id="psychiatryCheckbox"
+                    option={i18n.gettext("psychiatryOption")}
+                  />
+                  <Checkbox
+                    id="radiationOncologyCheckbox"
+                    option={i18n.gettext("radiationOncologyOption")}
+                  />
+                  <Checkbox
+                    id="surgeryCheckbox"
+                    option={i18n.gettext("surgeryOption")}
+                  />
+                  <Checkbox
+                    id="urologyCheckbox"
+                    option={i18n.gettext("urologyOption")}
+                  />
                 </ol>
               </div>
               <button className="btn btn-orange">Submit registration</button>

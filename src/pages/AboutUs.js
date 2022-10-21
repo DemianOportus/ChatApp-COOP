@@ -10,11 +10,11 @@ export default function AboutUs() {
   return (
     <div className=" mx-auto md:max-w-xl max-w-sm  ">
       <div className=" mt-10 text-myDefaultGrey">
-        <h1 className="text-4xl font-bold block uppercase text-center">
+        <h1 className="text-4xl font-[myriadBold] block uppercase text-center">
           {i18n.gettext("aboutUsTitle")}
         </h1>
 
-        <h2 className="text-2xl mt-10 font-light block first-letter:uppercase">
+        <h2 className="text-2xl mt-10 font-[myriadLight] block first-letter:uppercase">
           {i18n.gettext("aboutUsDescription")}
         </h2>
       </div>
@@ -33,12 +33,12 @@ export default function AboutUs() {
       </div>
 
       <div className="ml-0  sm:ml-4 ">
-        <h1 className="text-4xl font-raleway font-normal block uppercase">
+        <h1 className="text-4xl font-[raleway] font-normal block uppercase">
           {i18n.gettext("aboutUsPartnersTitle")}
         </h1>
 
         <div className="mt-4 mb-10">
-          <h2 className="font-myriad font-light text-2xl">
+          <h2 className="font-[myriadLight] text-2xl">
             {i18n.gettext("aboutUsPartnersDescription")}
 
             {/* TODO: Lorem ipsum partners*/}
