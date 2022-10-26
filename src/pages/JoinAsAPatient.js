@@ -3,6 +3,7 @@ import { useEffect, useState, useContext } from "react";
 import i18n from "../i18";
 import { Context } from "../components/Context";
 import UserInput from "../components/userInput";
+import Checkbox from "../components/checkbox";
 
 // {i18n.gettext("bePartOfTeam")}
 
@@ -65,8 +66,14 @@ export default function JoinAsAPatient() {
                   <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration1")}
                   </li>
-                  <h1> {i18n.gettext("iAmCurrentlyWithoutDoctor")}</h1>
-                  <h1> {i18n.gettext("iAmCanadian")}</h1>
+                  <Checkbox
+                    id="iAmCurretnlyWithoutDoctorCheckbox"
+                    option={i18n.gettext("iAmCurrentlyWithoutDoctor")}
+                  />
+                  <Checkbox
+                    id="iAmCanadianCheckbox"
+                    option={i18n.gettext("iAmCanadian")}
+                  />
                   <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration2")}
                   </li>

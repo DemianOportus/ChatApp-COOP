@@ -8,8 +8,8 @@ import { Context } from "../components/Context";
 export default function Homepage() {
   useContext(Context);
   return (
-    <div className="text-center mt-10  mx-auto md:max-w-xl ">
-      <div className="text-center mt-10  mx-auto md:max-w-xl text-myDefaultGrey">
+    <div className="text-center mt-10 mx-auto">
+      <div className="text-center mt-10  mx-auto text-myDefaultGrey">
         <h1 className="text-4xl font-[myriadBold] block uppercase">
           {i18n.gettext("welcomeToChat")}
         </h1>
@@ -17,26 +17,32 @@ export default function Homepage() {
           {i18n.gettext("clinicOfTheFuture")}
         </h1>
         {/* Polygon Shape text */}
-        <div className="div--triangle">
+        <div className="md:hidden div--triangle">
           <h2 className="text-2xl font-[myriadLight] block">
             {i18n.gettext("whatWeOffer")}
           </h2>
         </div>
         {/* 1153 vs 574 */}
-        <div className="div--promos">
-          <iframe
-            className="responsive-iframe"
-            width="1153"
-            height="574"
-            src="https://www.youtube.com/embed/tks8vUwh3wM"
-            title="iPhone 14 - TRAILER"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+        <div className="bg-[#E1E1E1] md:py-[15px] md:px-[30px] md:grid md:grid-cols-2 md:gap-16 md:items-center">
+          <div className="hidden md:block">
+            <h2 className="text-2xl font-[myriadLight] block">
+              {i18n.gettext("whatWeOffer")}
+            </h2>
+          </div>
+          <div className="div--promos md:grid">
+            <iframe
+              className="responsive-iframe"
+              width="1153"
+              height="574"
+              src="https://www.youtube.com/embed/tks8vUwh3wM"
+              title="iPhone 14 - TRAILER"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
-
-        <div className="ml-2 text-start sm:ml-4 md:max-w-lg">
+        <div className="ml-2 text-start sm:ml-4 md:mx-[50px] md:mt-[30px]">
           <h1 className="text-4xl font-[raleway] font-normal block uppercase">
             {i18n.gettext("getMatched")}
           </h1>
@@ -44,17 +50,17 @@ export default function Homepage() {
           <div className="mt-4">
             <h2 className="text-2xl block">{i18n.gettext("weAccept")}</h2>
             <div className="mt-4">
-              <h2 className="text-2xl font-[raleway] font-medium block uppercase ">
-                {i18n.gettext("howItWorks")}
-              </h2>
-              <ol className="text-2xl">
-                <li>{i18n.gettext("ul1")}</li>
-                <li>{i18n.gettext("ul2")}</li>
-                <li>{i18n.gettext("ul3")}</li>
-                <li>{i18n.gettext("ul4")}</li>
-                <li>{i18n.gettext("ul5")}</li>
-                <li>{i18n.gettext("ul6")}</li>
-              </ol>
+                <h2 className="text-2xl font-[raleway] font-medium block uppercase ">
+                  {i18n.gettext("howItWorks")}
+                </h2>
+                <ol className="text-2xl  md:grid md:grid-cols-2">
+                  <li>{i18n.gettext("ul1")}</li>
+                  <li>{i18n.gettext("ul2")}</li>
+                  <li>{i18n.gettext("ul3")}</li>
+                  <li>{i18n.gettext("ul4")}</li>
+                  <li>{i18n.gettext("ul5")}</li>
+                  <li>{i18n.gettext("ul6")}</li>
+                </ol>
             </div>
           </div>
         </div>
