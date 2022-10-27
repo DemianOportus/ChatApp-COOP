@@ -71,8 +71,9 @@ const en = {
   // PAGE -- Join as a patient
   howToJoin: "How to join:",
   registrationForm: "Registration form",
-  pleaseFillOut:
-    "Please fill out the form below to register. Or, if you prefer to register by email, download the registration form PDF (mb) here, however it takes longer to process applications done by e-mail.",
+  pleaseFillOut: "Please fill out the form below to register.",
+  registerByEmail:
+    "Or, if you prefer to register by email, download the registration form PDF (mb) here, however it takes longer to process applications done by e-mail.",
   learnAboutWhyWeAsk:
     "Learn about why we ask these question and how we protect your data",
   boldListOfRegistration1: "Eligibility",
@@ -138,7 +139,8 @@ const en = {
   providerName: "Provider's name:",
   numberOfSpots: "Number of available spots for patients:",
   officeAddress: "Office Address:",
-  selectLanguage: "What language do you prefer to communicate with patients in (select all that apply):",
+  selectLanguage:
+    "What language do you prefer to communicate with patients in (select all that apply):",
   englishOption: "1. English",
   frenchOption: "2. French",
   spanishOption: "3. Spanish",
@@ -178,25 +180,27 @@ const en = {
   asthmaOption: "4. Asthma",
   cancerOption: "5. Cancer",
   chronicObstructiveOption: "6. Chronic Obstructive Pulmonary Disease (COPD)",
-  crohnsOption: "7. Crohn’s Disease, Ulcerative Colitis, Other Inflammatory Bowel Diseases, Irritable Bowel Syndrome",
+  crohnsOption:
+    "7. Crohn’s Disease, Ulcerative Colitis, Other Inflammatory Bowel Diseases, Irritable Bowel Syndrome",
   cysticFibrosisOption: "8. Cystic Fibrosis",
   otherChronicIllnessSpecialtiesOption: "9. Others:",
 
-  physicianMentalHealthSpecialties: "Physician chronic mental health & addictions specialties:",
+  physicianMentalHealthSpecialties:
+    "Physician chronic mental health & addictions specialties:",
   alcoholAddictionOption: "1. Alcohol addiction",
   prescriptionDrugAddictionOption: "2. Prescription drug addiction",
   drugAddictionOption: "3. Drug addiction",
   heroinAddictionOption: "4. Heroin addiction",
   opioidAddictionOption: "5. Opioid addiction",
-  moodDisordersOption: "6. Mood disorders: major depression and bipolar disorder",
+  moodDisordersOption:
+    "6. Mood disorders: major depression and bipolar disorder",
   schizophreniaOption: "7. Schizophrenia",
   anxietyDisordersOption: "8. Anxiety disorders",
-  personalityDisordersOption:  "9. Personality disorders",
+  personalityDisordersOption: "9. Personality disorders",
   eatingDisordersOption: "10. Eating disorders",
   problemGamblingOption: "11. Problem gambling",
   substanceDependencyOption: "12. Substance dependency",
-  otherMentalHealthSpecialties: "13. Others:"
-
+  otherMentalHealthSpecialties: "13. Others:",
 };
 
 export default en;

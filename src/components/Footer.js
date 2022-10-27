@@ -11,15 +11,17 @@ function Footer() {
 
   return (
     <div className=" bg-myFooterBlue font-raleway pt-7">
-      <div className="flex justify-between px-[30px] pb-[15px] md:justify-evenly ">
+      <div className="flex justify-between px-[30px] pb-[15px] md:justify-evenly text-myDefaultGrey">
         <div>
-          <p className="uppercase font-bold">{i18n.gettext("contactUs")}</p>
-          <p>Info@chat.ottawa.ca </p>
-          <p>613.789.9090</p>
+          <p className="uppercase font-[myriadBold]">
+            {i18n.gettext("contactUs")}
+          </p>
+          <p className="font-[myriadLight]">info@chat.ottawa.com </p>
+          <p className="font-[myriadLight]">613.789.9090</p>
         </div>
         <div>
           <p className="uppercase font-bold">{i18n.gettext("findUsOn")}</p>
-          <div className="text-center text-[#323239]">
+          <div className="text-center text-myDefaultGrey">
             <i className="fa-xl fa-brands fa-square-facebook"></i>
             <i className="fa-xl fa-brands fa-square-twitter px-[10px]"></i>
             <i className="fa-xl fa-brands fa-linkedin"></i>
@@ -34,7 +36,7 @@ function Footer() {
             className="w-[4rem] mx-[15px] rounded-full"
           />
         </div>
-        <div className="text-sm font-semibold pb-[30px] pt-[30px]">
+        <div className="text-sm font-[myriadBold] pb-[30px] pt-[30px] text-myDefaultGrey">
           <p>CHAT APP</p>
           <hr className="border-black" />
           <p>{i18n.gettext("clinicOfTheFuture")}</p>

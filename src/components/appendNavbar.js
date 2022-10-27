@@ -31,7 +31,7 @@ export default function AppendNavbar() {
   const { locale, setLocale } = useContext(Context);
 
   return (
-    <div className="flex items-center justify-center bg-myFooterBlue">
+    <div className="flex items-center justify-center bg-myFooterBlue font-[myriadRegular]">
       <div className="inline-flex">
         <button
           className=" hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"

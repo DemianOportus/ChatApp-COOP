@@ -13,7 +13,7 @@ function Navbar() {
           <Menu.Button>
             <i className="fa-solid fa-2xl fa-bars absolute right-[50px] top-[55px] text-white"></i>
           </Menu.Button>
-          <Menu.Items className="list-none flex flex-col pr-[20px] text-right bg-gray-100 text-black text-xl">
+          <Menu.Items className="list-none flex flex-col pr-[20px] text-right bg-gray-100 text-black text-xl font-[myriadREgular]">
             <Menu.Item className="py-4 ">
               {({ active }) => (
                 <a href="/join-as-a-patient" className={`${active}`}>
@@ -51,8 +51,8 @@ function Navbar() {
             className="w-[4rem] mx-[15px] rounded-full"
           />
         </div>
-        <div className="text-[1rem] pb-[20px] pt-[30px]">
-          <p>CHAT</p>
+        <div className="text-[1rem] pb-[20px] pt-[30px] font-[myriadBold]">
+          <p>CHAT APP</p>
           <p>{i18n.gettext("clinicOfTheFuture")}</p>
         </div>
       </div>

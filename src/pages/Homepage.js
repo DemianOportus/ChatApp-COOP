@@ -29,7 +29,7 @@ export default function Homepage() {
               {i18n.gettext("whatWeOffer")}
             </h2>
           </div>
-          <div className="div--promos md:grid">
+          <div className="div--promos md:grid md:m-0">
             <iframe
               className="responsive-iframe"
               width="1153"
@@ -48,28 +48,32 @@ export default function Homepage() {
           </h1>
 
           <div className="mt-4">
-            <h2 className="text-2xl block">{i18n.gettext("weAccept")}</h2>
+            <h2 className="text-2xl block font-[myriadRegular] mb-16">
+              {i18n.gettext("weAccept")}
+            </h2>
             <div className="mt-4">
-                <h2 className="text-2xl font-[raleway] font-medium block uppercase ">
-                  {i18n.gettext("howItWorks")}
-                </h2>
-                <ol className="text-2xl  md:grid md:grid-cols-2">
-                  <li>{i18n.gettext("ul1")}</li>
-                  <li>{i18n.gettext("ul2")}</li>
-                  <li>{i18n.gettext("ul3")}</li>
-                  <li>{i18n.gettext("ul4")}</li>
-                  <li>{i18n.gettext("ul5")}</li>
-                  <li>{i18n.gettext("ul6")}</li>
-                </ol>
+              <h2 className="text-2xl font-[raleway] font-medium block uppercase ">
+                {i18n.gettext("howItWorks")}
+              </h2>
+              <ol className="font-[myriadRegular] text-2xl  md:grid md:grid-cols-2">
+                <li className="mt-10">{i18n.gettext("ul1")}</li>
+                <li>{i18n.gettext("ul2")}</li>
+                <li>{i18n.gettext("ul3")}</li>
+                <li>{i18n.gettext("ul4")}</li>
+                <li>{i18n.gettext("ul5")}</li>
+                <li>{i18n.gettext("ul6")}</li>
+              </ol>
             </div>
           </div>
         </div>
-        <div className="div--joinTriangle uppercase text-4xl  font-semibold">
+        <div className="div--joinTriangle uppercase text-4xl font-[myriadBold]">
           <h1>{i18n.gettext("join")} </h1>
           <h1> {i18n.gettext("asPatient")}</h1>
         </div>
         <div className="mr-5 ml-5 text-end">
-          <h1 className="text-4xl ">{i18n.gettext("bePartOfTeam")} </h1>
+          <h1 className="text-3xl font-[raleway] uppercase">
+            {i18n.gettext("bePartOfTeam")}{" "}
+          </h1>
           {/* <h1 className="text-4xl ">medical team</h1> */}
 
           <h2 className="text-2xl lowercase font-[myriadLight] first-letter:uppercase">

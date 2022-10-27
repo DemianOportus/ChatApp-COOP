@@ -73,7 +73,9 @@ const fr = {
   howToJoin: "Comment rejoindre :",
   registrationForm: "Formulaire d'inscription",
   pleaseFillOut:
-    "Veuillez remplir le formulaire ci-dessous pour vous inscrire. Ou, si vous préférez vous inscrire par e-mail, téléchargez le formulaire d'inscription PDF (mb) ici, cependant le traitement des demandes par e-mail prend plus de temps.",
+    "Veuillez remplir le formulaire ci-dessous pour vous inscrire.",
+  registerByEmail:
+    "Ou, si vous préférez vous inscrire par e-mail, téléchargez le formulaire d'inscription PDF (mb) ici, cependant le traitement des demandes par e-mail prend plus de temps.",
   LearnAboutWhyWeAsk:
     "Découvrez pourquoi nous posons ces questions et comment nous protégeons vos données",
   boldListOfRegistration1: "Éligibilité",
@@ -141,7 +143,8 @@ const fr = {
   providerName: "Nom du fournisseur:",
   numberOfSpots: "Nombre de places disponibles pour les patients:",
   officeAddress: "Adresse de bureau:",
-  selectLanguage: "Dans quelle langue préférez-vous communiquer avec les patients (sélectionnez tout ce qui s'applique) :",
+  selectLanguage:
+    "Dans quelle langue préférez-vous communiquer avec les patients (sélectionnez tout ce qui s'applique) :",
   englishOption: "1. Anglais",
   frenchOption: "2. Français",
   spanishOption: "3. Espagnol",
@@ -154,14 +157,17 @@ const fr = {
   physicianSpecialties: "Spécialités médicales qui s'appliquent à vous :",
   otherSpecialtiesOption: "21. Autre:",
 
-  physicianChronicIllnessSpecialties: "Spécialités des maladies chroniques des médecins:",
+  physicianChronicIllnessSpecialties:
+    "Spécialités des maladies chroniques des médecins:",
   ALSOption: "1. SLA (maladie de Lou Gehrig)",
   alzheimersOption: "2. Maladie d'Alzheimer et autres démences",
   arthritisOption: "3. Arthrite",
   asthmaOption: "4. Asthme",
   cancerOption: "5. Cancer",
-  chronicObstructiveOption: "6. Maladie pulmonaire obstructive chronique (MPOC)",
-  crohnsOption: "7. Maladie de Crohn, colite ulcéreuse, autres maladies inflammatoires de l'intestin, syndrome du côlon irritable",
+  chronicObstructiveOption:
+    "6. Maladie pulmonaire obstructive chronique (MPOC)",
+  crohnsOption:
+    "7. Maladie de Crohn, colite ulcéreuse, autres maladies inflammatoires de l'intestin, syndrome du côlon irritable",
   cysticFibrosisOption: "8. Fibrose kystique",
   otherChronicIllnessSpecialtiesOption: "9. Autres:",
 };
