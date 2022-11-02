@@ -10,10 +10,10 @@ export default function Homepage() {
   return (
     <div className="text-center mt-10 mx-auto">
       <div className="text-center mt-10  mx-auto text-myDefaultGrey">
-        <h1 className="text-4xl font-[myriadBold] block uppercase">
+        <h1 className="text-4xl font-[raleway] block uppercase font-semibold">
           {i18n.gettext("welcomeToChat")}
         </h1>
-        <h1 className="text-4xl font-[myriadBold] block uppercase">
+        <h1 className="text-4xl font-[raleway] font-semibold block uppercase  md:pb-8">
           {i18n.gettext("clinicOfTheFuture")}
         </h1>
         {/* Polygon Shape text */}
@@ -48,15 +48,15 @@ export default function Homepage() {
           </h1>
 
           <div className="mt-4">
-            <h2 className="text-2xl block font-[myriadRegular] mb-16">
+            <h2 className="text-2xl block font-[myriadRegular] mb-16  md:mb-4">
               {i18n.gettext("weAccept")}
             </h2>
             <div className="mt-4">
-              <h2 className="text-2xl font-[raleway] font-medium block uppercase ">
+              <h2 className="text-2xl font-[raleway] font-medium block uppercase mb-4">
                 {i18n.gettext("howItWorks")}
               </h2>
               <ol className="font-[myriadRegular] text-2xl  md:grid md:grid-cols-2">
-                <li className="mt-10">{i18n.gettext("ul1")}</li>
+                <li>{i18n.gettext("ul1")}</li>
                 <li>{i18n.gettext("ul2")}</li>
                 <li>{i18n.gettext("ul3")}</li>
                 <li>{i18n.gettext("ul4")}</li>

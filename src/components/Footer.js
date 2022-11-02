@@ -27,8 +27,22 @@ function Footer() {
             <i className="fa-xl fa-brands fa-linkedin"></i>
           </div>
         </div>
+        <div className="hidden md:flex justify-center ">
+          <div className="">
+            <img
+              src={profile}
+              alt="User Profile"
+              className="w-[4rem] mx-[15px] rounded-full"
+            />
+          </div>
+          <div className="text-sm font-[myriadBold] pb-[30px] pt-[10px] text-myDefaultGrey">
+            <p>CHAT APP</p>
+            <hr className="border-black" />
+            <p>{i18n.gettext("clinicOfTheFuture")}</p>
+          </div>
+        </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center md:hidden">
         <div className="pt-[25px]">
           <img
             src={profile}
