@@ -57,38 +57,40 @@ function Footer() {
         </div>
       </div>
       <div className="text-center mt-7 bg-[#323239] text-white pt-[20px] pb-[50px]">
-        <p className="uppercase pb-[10px]">
-          <a
-            rel="noreferrer"
-            href="/join-as-a-patient"
-            className="hover:text-blue-600"
-          >
-            {" "}
-            {i18n.gettext("joinPatient")}
-          </a>{" "}
-          /
-          <a
-            rel="noreferrer"
-            href="/join-as-a-doctor"
-            className="hover:text-blue-600"
-          >
-            {" "}
-            {i18n.gettext("joinDoctor")}
-          </a>
-        </p>
-        <p className="uppercase pb-[10px]">
-          <a rel="noreferrer" href="/about-us" className="hover:text-blue-600">
-            {i18n.gettext("aboutUs")}
-          </a>
-          /{" "}
-          <a
-            rel="noreferrer"
-            href="/data-privacy"
-            className="hover:text-blue-600"
-          >
-            {i18n.gettext("dataPrivacyTitle")}
-          </a>
-        </p>
+        <div className="md:flex justify-center gap-10">
+          <p className="uppercase pb-[10px]">
+            <a
+              rel="noreferrer"
+              href="/join-as-a-patient"
+              className="hover:text-blue-600"
+            >
+              {" "}
+              {i18n.gettext("joinPatient")}
+            </a>{" "}
+            /
+            <a
+              rel="noreferrer"
+              href="/join-as-a-doctor"
+              className="hover:text-blue-600"
+            >
+              {" "}
+              {i18n.gettext("joinDoctor")}
+            </a>
+          </p>
+          <p className="uppercase pb-[10px]">
+            <a rel="noreferrer" href="/about-us" className="hover:text-blue-600">
+              {i18n.gettext("aboutUs")}
+            </a>
+            /{" "}
+            <a
+              rel="noreferrer"
+              href="/data-privacy"
+              className="hover:text-blue-600"
+            >
+              {i18n.gettext("dataPrivacyTitle")}
+            </a>
+          </p>
+        </div>
         <p className="text-sm text-gray-300">
           {thisYear} CHAT {i18n.gettext("clinicOfTheFuture")} | All rights
           reserved

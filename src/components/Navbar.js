@@ -108,28 +108,28 @@ function Navbar() {
               className={`py-1 px-5 ${homeBackground && 'bg-[#D55E00]'}`} 
               onClick={changeHomeBackground}
             >
-              Home
+              {i18n.gettext("home")}
             </a>
             <a 
               href="/join-as-a-patient"
               className={`py-1 px-5 ${patientsBackground && 'bg-[#D55E00]'}`} 
               onClick={changePatientsBackground}
             >
-              For Patients
+              {i18n.gettext("forPatients")}
             </a>
             <a 
               href="/join-as-a-doctor"
               className={`py-1 px-5 ${doctorsBackground && 'bg-[#D55E00]'}`} 
               onClick={changeDoctorsBackground}
             >
-              For Doctors
+              {i18n.gettext("forDoctors")}
             </a>
             <a 
               href="/about"
               className={`py-1 px-5 ${aboutBackground && 'bg-[#D55E00]'}`} 
               onClick={changeAboutBackground}
             >
-              About
+              {i18n.gettext("about")}
             </a>
           </div>
         </div>

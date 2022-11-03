@@ -8,6 +8,10 @@ const fr = {
   textSizeIncrease: "Taille du texte +",
   textSizeDecrease: "Taille du texte -",
   clinicOfTheFuture: "Clinique du futur",
+  home: "Accueil",
+  forPatients: "Pour patients",
+  forDoctors: "Pour médecins",
+  about: "À propos",
 
   // Home Page
   welcomeToChat: "Bienvenue chez Chat",

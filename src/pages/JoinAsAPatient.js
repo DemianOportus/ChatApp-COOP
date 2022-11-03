@@ -10,8 +10,8 @@ import Checkbox from "../components/checkbox";
 export default function JoinAsAPatient() {
   useContext(Context);
   return (
-    <div className="text-center mt-10  mx-auto md:max-w-xl ">
-      <div className="text-center mt-10   mx-auto md:max-w-xl text-myDefaultGrey">
+    <div className="text-center mt-10 mx-auto">
+      <div className="text-center mt-10 mx-auto text-myDefaultGrey">
         <h1 className="text-4xl font-[raleway] font-bold block uppercase mb-10">
           {i18n.gettext("joinPatient")}
         </h1>
@@ -29,14 +29,14 @@ export default function JoinAsAPatient() {
           ></iframe>
         </div>
 
-        <div className="ml-2 text-start sm:ml-4 md:max-w-lg">
+        <div className="ml-2 text-start sm:ml-4 md:mx-[50px]">
           <h1 className="text-4xl font-[raleway] font-normal block ">
             {i18n.gettext("howToJoin")}
           </h1>
 
           <div className="mt-4">
             <div className="mt-4">
-              <ol className="text-2xl font-[myriadRegular]">
+              <ol className="text-2xl font-[myriadRegular] md:grid md:grid-cols-2">
                 <li>{i18n.gettext("ul1")}</li>
                 <li>{i18n.gettext("ul2")}</li>
                 <li>{i18n.gettext("ul3")}</li>
@@ -48,7 +48,7 @@ export default function JoinAsAPatient() {
             </div>
           </div>
         </div>
-        <div className="ml-0  sm:ml-4 ">
+        <div className="ml-0 sm:ml-4 md:mx-[50px]">
           <h1 className="text-4xl font-[raleway] font-normal block uppercase mb-12">
             {i18n.gettext("registrationForm")}
           </h1>
