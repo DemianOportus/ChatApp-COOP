@@ -96,7 +96,7 @@ html {
   height: 90%;
 }
 li {
-  margin-left: 8%;
+  margin-left: 22px;
   margin-bottom: 10px;
   margin-top: 10px;
   text-align: start;
@@ -107,7 +107,7 @@ ol > li::marker {
 }
 /* Button Style*/
 .btn {
-  @apply font-bold font-raleway py-2 px-4 rounded-xl;
+  @apply font-bold font-raleway py-2 px-4 rounded-xl md:text-2xl md:px-6 md:py-4;
 }
 .btn-orange {
   @apply bg-myOrange text-white;

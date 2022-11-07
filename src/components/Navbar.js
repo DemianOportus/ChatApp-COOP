@@ -125,7 +125,7 @@ function Navbar() {
               {i18n.gettext("forDoctors")}
             </a>
             <a 
-              href="/about"
+              href="/about-us"
               className={`py-1 px-5 ${aboutBackground && 'bg-[#D55E00]'}`} 
               onClick={changeAboutBackground}
             >
