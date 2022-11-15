@@ -12,18 +12,16 @@ import JoinAsADoctor from "./pages/JoinAsADoctor";
 export default function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route element={<ProtectedRoutes />}>
-            <Route path="/success" element={<Success />} />
-          </Route>
-          <Route path="/data-privacy" element={<DataPrivacy />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/join-as-a-patient" element={<JoinAsAPatient />} />
-          <Route path="/join-as-a-doctor" element={<JoinAsADoctor />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route element={<ProtectedRoutes />}>
+          <Route path="/success" element={<Success />} />
+        </Route>
+        <Route path="/data-privacy" element={<DataPrivacy />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/join-as-a-patient" element={<JoinAsAPatient />} />
+        <Route path="/join-as-a-doctor" element={<JoinAsADoctor />} />
+      </Routes>
     </>
   );
 }

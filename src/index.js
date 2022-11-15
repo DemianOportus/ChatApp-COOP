@@ -6,15 +6,18 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AppendNavbar from "./components/appendNavbar";
 import { Provider } from "./components/Context";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider>
-      <Navbar />
-      <AppendNavbar />
-      <App />
-      <Footer />
+      <Router>
+        <Navbar />
+        <AppendNavbar />
+        <App />
+        <Footer />
+      </Router>
     </Provider>
   </React.StrictMode>
 );

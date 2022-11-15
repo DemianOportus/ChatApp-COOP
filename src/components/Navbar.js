@@ -4,49 +4,11 @@ import i18n from "../i18";
 import { useContext } from "react";
 import { Context } from "./Context";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   useContext(Context);
-  const [homeBackground, setHomeBackground] = useState(false);
-  const [patientsBackground, setPatientsBackground] = useState(false);
-  const [doctorsBackground, setDoctorsBackground] = useState(false);
-  const [aboutBackground, setAboutBackground] = useState(false);
-
-  function changeHomeBackground() {
-    if (homeBackground == false) {
-      setHomeBackground(true);
-      setPatientsBackground(false);
-      setDoctorsBackground(false);
-      setAboutBackground(false);
-    } 
-  }
-  
-  function changePatientsBackground() {
-    if (patientsBackground == false) {
-      setPatientsBackground(true);
-      setHomeBackground(false);
-      setDoctorsBackground(false);
-      setAboutBackground(false);
-    } 
-  }
-
-  function changeDoctorsBackground() {
-    if (doctorsBackground == false) {
-      setDoctorsBackground(true);
-      setHomeBackground(false);
-      setPatientsBackground(false);
-      setAboutBackground(false);
-    } 
-  }
-
-  function changeAboutBackground() {
-    if (aboutBackground == false) {
-      setAboutBackground(true);
-      setHomeBackground(false);
-      setPatientsBackground(false);
-      setDoctorsBackground(false);
-    } 
-  }
+  const location = useLocation();
 
   function MyDropdown() {
     return (
@@ -85,7 +47,7 @@ function Navbar() {
 
   return (
     <div className="bg-[#323239] text-white font-[myriadRegular]">
-      <div className="md:flex md:items-center md:justify-between md:pr-10 md:pl-6">  
+      <div className="md:flex md:items-center md:justify-between md:pr-10 md:pl-6">
         <div>
           <div className="flex">
             <div className="pt-[22px]">
@@ -103,38 +65,42 @@ function Navbar() {
         </div>
         <div className="hidden md:block">
           <div className="flex items-center justify-end gap-1 text-2xl">
-            <a 
-              href="/"
-              className={`py-1 px-5 ${homeBackground && 'bg-[#D55E00]'}`} 
-              onClick={changeHomeBackground}
+            <Link
+              to="/"
+              className={`py-1 px-5 ${
+                location.pathname === "/" && "bg-[#D55E00]"
+              }`}
             >
               {i18n.gettext("home")}
-            </a>
-            <a 
-              href="/join-as-a-patient"
-              className={`py-1 px-5 ${patientsBackground && 'bg-[#D55E00]'}`} 
-              onClick={changePatientsBackground}
+            </Link>
+            <Link
+              to="/join-as-a-patient"
+              className={`py-1 px-5 ${
+                location.pathname === "/join-as-a-patient" && "bg-[#D55E00]"
+              }`}
             >
               {i18n.gettext("forPatients")}
-            </a>
-            <a 
-              href="/join-as-a-doctor"
-              className={`py-1 px-5 ${doctorsBackground && 'bg-[#D55E00]'}`} 
-              onClick={changeDoctorsBackground}
+            </Link>
+            <Link
+              to="/join-as-a-doctor"
+              className={`py-1 px-5 ${
+                location.pathname === "/join-as-a-doctor" && "bg-[#D55E00]"
+              }`}
             >
               {i18n.gettext("forDoctors")}
-            </a>
-            <a 
-              href="/about-us"
-              className={`py-1 px-5 ${aboutBackground && 'bg-[#D55E00]'}`} 
-              onClick={changeAboutBackground}
+            </Link>
+            <Link
+              to="/about-us"
+              className={`py-1 px-5 ${
+                location.pathname === "/about-us" && "bg-[#D55E00]"
+              }`}
             >
               {i18n.gettext("about")}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
-      <MyDropdown/>
+      <MyDropdown />
     </div>
   );
 }
