@@ -66,7 +66,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        <div className="div--joinTriangle uppercase text-4xl font-[myriadBold]">
+        <div className="div--joinTriangle uppercase text-4xl font-[myriadBold] md:w-1/2">
           <h1>{i18n.gettext("join")} </h1>
           <h1> {i18n.gettext("asPatient")}</h1>
         </div>
@@ -80,9 +80,11 @@ export default function Homepage() {
             {i18n.gettext("getMatchedWithPatients")}
           </h2>
         </div>
-        <div className="div--joinBackwardsTriangle uppercase text-4xl font-[myriadBold]">
-          <h1>{i18n.gettext("join")} </h1>
-          <h1> {i18n.gettext("asDoctor")}</h1>
+        <div className="md:flex md:justify-end">
+          <div className="div--joinBackwardsTriangle uppercase text-4xl font-[myriadBold] md:w-1/2">
+            <h1>{i18n.gettext("join")} </h1>
+            <h1> {i18n.gettext("asDoctor")}</h1>
+          </div>
         </div>
       </div>
     </div>

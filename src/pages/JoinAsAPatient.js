@@ -239,7 +239,7 @@ export default function JoinAsAPatient() {
               </div>
               <div className="text-center">
                 <button className="btn btn-orange my-6">
-                  Submit registration
+                  {i18n.gettext("submitRegistrationButton")}
                 </button>
               </div>
             </div>

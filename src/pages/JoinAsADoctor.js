@@ -49,38 +49,40 @@ export default function JoinAsADoctor() {
         {i18n.gettext("joinDoctor")}
       </h1>
 
-      <div className="div--promos mt-10">
-        <iframe
-          className="responsive-iframe"
-          width="1153"
-          height="574"
-          src="https://www.youtube.com/embed/tks8vUwh3wM"
-          title="iPhone 14 - TRAILER"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
+      <div className="lg:grid lg:grid-cols-2 lg:items-center">
+        <div className="div--promos mt-10">
+          <iframe
+            className="responsive-iframe"
+            width="1153"
+            height="574"
+            src="https://www.youtube.com/embed/tks8vUwh3wM"
+            title="iPhone 14 - TRAILER"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
 
-      <div className="ml-2 text-start font-[myriadRegular] sm:ml-4">
-        <h1 className="text-4xl block">{i18n.gettext("howToJoin")}</h1>
+        <div className="text-start font-[myriadRegular] ml-2 sm:ml-4 md:mx-10">
+          <h1 className="text-4xl block">{i18n.gettext("howToJoin")}</h1>
 
-        <div className="mt-4 mr-[15px]">
           <div className="mt-4">
-            <ol className="text-2xl md:grid md:grid-cols-2">
-              <li className="pt-[15px]">
-                <a className="hover:underline" href="#registrationForm">{i18n.gettext("li1")}</a>
-              </li>
-              <li className="pt-[15px]">{i18n.gettext("li2")}</li>
-              <li className="pt-[15px]">{i18n.gettext("li3")}</li>
-              <li className="pt-[15px]">{i18n.gettext("li4")}</li>
-            </ol>
-            <hr className="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+            <div className="mt-4">
+              <ol className="text-2xl md:grid md:grid-cols-2 md:gap-x-12 lg:gap-x-6">
+                <li className="">
+                  <a className="hover:underline" href="#registrationForm">{i18n.gettext("li1")}</a>
+                </li>
+                <li>{i18n.gettext("li2")}</li>
+                <li>{i18n.gettext("li3")}</li>
+                <li>{i18n.gettext("li4")}</li>
+              </ol>
+              <hr className="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700 lg:hidden" />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px]">
+      <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] md:mx-10">
         <div className="flex justify-between">
           <h1 className="uppercase text-4xl">{i18n.gettext("dropdown1")}</h1>
           <button className="px-[20px]" onClick={toggleWhatMakesItDifferent}>
@@ -90,7 +92,7 @@ export default function JoinAsADoctor() {
         {whatMakesItDifferent && <p>Lorem Ipsum1</p>}
       </div>
 
-      <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px]">
+      <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
         <div className="flex justify-between">
           <h1 className="uppercase text-4xl">{i18n.gettext("dropdown2")}</h1>
           <button className="px-[20px]" onClick={toggleHowToUse}>
@@ -100,7 +102,7 @@ export default function JoinAsADoctor() {
         {howToUse && <p>Lorem Ipsum2</p>}
       </div>
 
-      <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px]">
+      <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
         <div className="flex justify-between">
           <h1 className="uppercase text-4xl">{i18n.gettext("dropdown3")}</h1>
           <button className="px-[20px]" onClick={toggleIncentives}>
@@ -110,49 +112,26 @@ export default function JoinAsADoctor() {
         {incentives && <p>Lorem Ipsum3</p>}
       </div>
 
-        <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px]">
-          <div className="flex justify-between">
-            <h1 className="uppercase text-4xl">{i18n.gettext("dropdown1")}</h1>
-            <button 
-              className="px-[20px]"
-              onClick={toggleWhatMakesItDifferent}><i class="fa-solid fa-angle-down fa-2xl"></i></button>
-          </div>
-          {whatMakesItDifferent && <p>Lorem Ipsum1</p>}
-        </div>
-
-        <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px]">
-          <div className="flex justify-between">
-            <h1 className="uppercase text-4xl">{i18n.gettext("dropdown2")}</h1>
-            <button 
-              className="px-[20px]"
-              onClick={toggleHowToUse}><i class="fa-solid fa-angle-down fa-2xl"></i></button>
-          </div>
-          {howToUse && <p>Lorem Ipsum2</p>}
-        </div>
-
-        <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px]">
-          <div className="flex justify-between">
-            <h1 className="uppercase text-4xl">{i18n.gettext("dropdown3")}</h1>
-            <button 
-              className="px-[20px]"
-              onClick={toggleIncentives}><i class="fa-solid fa-angle-down fa-2xl"></i></button>
-          </div>
-          {incentives && <p>Lorem Ipsum3</p>}
-        </div>
-
         <div className="ml-0  sm:ml-4" id="registrationForm">
         <h1 className="mt-6 text-4xl font-raleway font-normal block uppercase md:text-center">
           {i18n.gettext("registrationForm")}
         </h1>
         <div className="ml-3 font-[myriadRegular]">
           <div className="mt-4 text-start">
-            <h2 className="font-[myriadRegular] text-2xl">
-              {i18n.gettext("pleaseFillOut")}
-            </h2>
+            <div className="lg:text-center my-10">
+              <h2 
+                className="font-[myriadRegular] text-2xl"
+              >
+                {i18n.gettext("pleaseFillOut")}
+              </h2>
 
-            <h2 className=" text-2xl">
-              {i18n.gettext("learnAboutWhyWeAsk")}
-            </h2>
+              <a 
+                className=" text-2xl underline text-myLightBlue"
+                href="/data-privacy"
+              >
+                <i class="fa-solid fa-circle-exclamation text-black pr-4"></i> {i18n.gettext("learnAboutWhyWeAsk")}
+              </a>
+            </div>
             <div className="mt-4 font-[myriadLight] text-2xl ">
               <ol>
                 <li className="font-[myriadBold]">
@@ -439,7 +418,7 @@ export default function JoinAsADoctor() {
                 </ol>
               </div>
               <div className="text-center md:my-10">
-                <button className="btn btn-orange">Submit registration</button>
+                <button className="btn btn-orange">{i18n.gettext("submitRegistrationButton")}</button>
               </div>
             </div>
           </div>

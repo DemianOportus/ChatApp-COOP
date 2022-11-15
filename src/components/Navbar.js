@@ -64,7 +64,7 @@ function Navbar() {
           </div>
         </div>
         <div className="hidden md:block">
-          <div className="flex items-center justify-end gap-1 text-2xl">
+          <div className="flex items-center justify-end gap-1 text-2xl xl:gap-10">
             <Link
               to="/"
               className={`py-1 px-5 ${
@@ -97,6 +97,11 @@ function Navbar() {
             >
               {i18n.gettext("about")}
             </Link>
+            <div className="hidden lg:flex gap-8 pl-10">
+              <i className="fa-md fa-brands fa-square-facebook"></i>
+              <i className="fa-md fa-brands fa-square-twitter px-[10px]"></i>
+              <i className="fa-md fa-brands fa-linkedin"></i>
+            </div>
           </div>
         </div>
       </div>
