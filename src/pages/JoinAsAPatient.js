@@ -10,66 +10,73 @@ import Checkbox from "../components/checkbox";
 export default function JoinAsAPatient() {
   useContext(Context);
   return (
-    <div className="text-center mt-10 mx-auto">
-      <div className="text-center mt-10 mx-auto text-myDefaultGrey">
-        <h1 className="text-4xl font-[raleway] font-bold block uppercase mb-10">
+      <div className="text-center mt-10 mx-auto text-myDefaultGrey font-[myriadRegular] ">
+        <h1 className="text-4xl font-[raleway] font-bold uppercase mb-10">
           {i18n.gettext("joinPatient")}
         </h1>
 
-        <div className="div--promos">
-          <iframe
-            className="responsive-iframe"
-            width="1153"
-            height="574"
-            src="https://www.youtube.com/embed/tks8vUwh3wM"
-            title="iPhone 14 - TRAILER"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+        <div className="lg:grid-container lg:grid lg:grid-cols-5 xl:gap-x-10">
+          <div 
+            className="div--promos lg:col-span-2  xl:ml-10"
+          >
+            <iframe
+              className="responsive-iframe"
+              width="1153"
+              height="574"
+              src="https://www.youtube.com/embed/tks8vUwh3wM"
+              title="iPhone 14 - TRAILER"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
 
-        <div className="ml-2 text-start sm:ml-4 md:mx-[50px]">
-          <h1 className="text-4xl font-[raleway] font-normal block ">
-            {i18n.gettext("howToJoin")}
-          </h1>
+          <div className="ml-2 text-start sm:ml-4 md:mx-[50px] lg:col-span-3">
+            <h1 className="text-4xl font-[raleway] font-normal">
+              {i18n.gettext("howToJoin")}
+            </h1>
 
-          <div className="mt-4">
             <div className="mt-4">
-              <ol className="text-2xl font-[myriadRegular] md:grid md:grid-cols-2">
-                <li>{i18n.gettext("ul1")}</li>
-                <li>{i18n.gettext("ul2")}</li>
-                <li>{i18n.gettext("ul3")}</li>
-                <li>{i18n.gettext("ul4")}</li>
-                <li>{i18n.gettext("ul5")}</li>
-                <li>{i18n.gettext("ul6")}</li>
-              </ol>
-              <hr className="mt-8 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+              <div className="mt-4">
+                <ol className="text-2xl md:grid md:grid-cols-2 md:gap-x-4">
+                  <li>{i18n.gettext("ul1")}</li>
+                  <li>{i18n.gettext("ul2")}</li>
+                  <li>{i18n.gettext("ul3")}</li>
+                  <li>{i18n.gettext("ul4")}</li>
+                  <li>{i18n.gettext("ul5")}</li>
+                  <li>{i18n.gettext("ul6")}</li>
+                </ol>
+                <hr className="mt-8 h-px bg-gray-200 border-0 dark:bg-gray-700 lg:hidden"/>
+              </div>
             </div>
           </div>
         </div>
-        <div className="ml-0 sm:ml-4 md:mx-[50px]">
-          <h1 className="text-4xl font-[raleway] font-normal block uppercase mb-12">
+        <div className="ml-0 sm:ml-4 md:mx-12">
+          <h1 className="text-4xl font-[raleway] font-normal uppercase my-12">
             {i18n.gettext("registrationForm")}
           </h1>
           <div className="ml-3">
             <div className="mt-4 text-start">
-              <h2 className="font-[myriadRegular] text-2xl mb-6">
-                {i18n.gettext("pleaseFillOut")}
-              </h2>
-              <h2 className="font-[myriadRegular] text-2xl">
-                {i18n.gettext("registerByEmail")}
-              </h2>
-
-              <h2 className="font-[myriadRegular] text-[#51A2DA] underline text-2xl my-8">
-                {i18n.gettext("learnAboutWhyWeAsk")}
-              </h2>
-              <div className="mt-4 font-[myriadLight] text-2xl ">
+              <div className="lg:text-center">
+                <h2 className="text-2xl mb-3">
+                  {i18n.gettext("pleaseFillOut")}
+                </h2>
+                <h2 className="text-2xl mb-3">
+                  {i18n.gettext("registerByEmail")}
+                </h2>
+                <a 
+                  className="text-2xl underline text-myLightBlue"
+                  href="/data-privacy"
+                >
+                  <i class="fa-solid fa-circle-exclamation text-black pr-4"></i> {i18n.gettext("learnAboutWhyWeAsk")}
+                </a>
+              </div>
+              <div className="mt-4 font-[myriadLight] text-2xl">
                 <ol>
                   <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration1")}
                   </li>
-                  <div className="md:grid md:grid-cols-2">
+                  <div className="md:grid md:grid-cols-2 lg:grid-cols-3">
                     <Checkbox
                       id="iAmCurretnlyWithoutDoctorCheckbox"
                       option={i18n.gettext("iAmCurrentlyWithoutDoctor")}
@@ -84,7 +91,7 @@ export default function JoinAsAPatient() {
                     {i18n.gettext("boldListOfRegistration2")}
                   </li>
 
-                  <div className="md:grid md:grid-cols-2">
+                  <div className="md:grid md:grid-cols-2 lg:grid-cols-3">
                     <UserInput
                       myLabel={i18n.gettext("firstNameIs")}
                       type="text"
@@ -125,7 +132,7 @@ export default function JoinAsAPatient() {
                   <li className="font-[myriadbold]">
                     {i18n.gettext("boldListOfRegistration4")}
                   </li>
-                  <div className="md:grid md:grid-cols-2">
+                  <div className="md:grid md:grid-cols-2 lg:grid-cols-3">
                     <UserInput
                       myLabel={i18n.gettext("emailAddressIs")}
                       type="text"
@@ -238,7 +245,7 @@ export default function JoinAsAPatient() {
                 </ol>
               </div>
               <div className="text-center">
-                <button className="btn btn-orange my-6">
+                <button className="btn btn-orange my-6 font-bold">
                   {i18n.gettext("submitRegistrationButton")}
                 </button>
               </div>
@@ -246,6 +253,5 @@ export default function JoinAsAPatient() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

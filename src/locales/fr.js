@@ -37,6 +37,9 @@ const fr = {
   bePartOfTeam: "Faites partie de notre équipe médicale",
   getMatchedWithPatients:
     "Faites correspondre les patients qui correspondent à votre domaine d'expertise.",
+  // Homepage -- Buttons
+  joinAsDoctor: "Joindre en tant que docteur",
+  joinAsPatient: "Joindre en tant que patient",
 
   //FOOTER
   contactUs: "Contactez-nous",

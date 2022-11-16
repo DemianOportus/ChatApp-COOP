@@ -36,6 +36,9 @@ const en = {
   bePartOfTeam: "Be part of our medical team",
   getMatchedWithPatients:
     "Get match with patients that fit into your area of expertise.",
+  // Homepage -- Buttons
+  joinAsDoctor: "Join as a doctor",
+  joinAsPatient: "Join as a patient",
 
   //FOOTER
   contactUs: "Contact us",

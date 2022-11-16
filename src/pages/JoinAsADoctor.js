@@ -44,7 +44,7 @@ export default function JoinAsADoctor() {
   }
 
   return (
-    <div className="mx-auto text-myDefaultGrey">
+    <div className="mx-auto text-myDefaultGrey  font-[myriadRegular] ">
       <h1 className="text-4xl uppercase text-center pt-[60px] font-[raleway] font-bold">
         {i18n.gettext("joinDoctor")}
       </h1>
@@ -63,26 +63,23 @@ export default function JoinAsADoctor() {
           ></iframe>
         </div>
 
-        <div className="text-start font-[myriadRegular] ml-2 sm:ml-4 md:mx-10">
+        <div className="text-start ml-2 sm:ml-4 md:mx-10">
           <h1 className="text-4xl block">{i18n.gettext("howToJoin")}</h1>
-
           <div className="mt-4">
-            <div className="mt-4">
-              <ol className="text-2xl md:grid md:grid-cols-2 md:gap-x-12 lg:gap-x-6">
-                <li className="">
-                  <a className="hover:underline" href="#registrationForm">{i18n.gettext("li1")}</a>
-                </li>
-                <li>{i18n.gettext("li2")}</li>
-                <li>{i18n.gettext("li3")}</li>
-                <li>{i18n.gettext("li4")}</li>
-              </ol>
-              <hr className="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700 lg:hidden" />
+            <ol className="text-2xl md:grid md:grid-cols-2 md:gap-x-12 lg:gap-x-6">
+              <li className="">
+                <a className="hover:underline" href="#registrationForm">{i18n.gettext("li1")}</a>
+              </li>
+              <li>{i18n.gettext("li2")}</li>
+              <li>{i18n.gettext("li3")}</li>
+              <li>{i18n.gettext("li4")}</li>
+            </ol>
+            <hr className="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700 lg:hidden" />
             </div>
-          </div>
         </div>
       </div>
 
-      <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] md:mx-10">
+      <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] md:mx-10">
         <div className="flex justify-between">
           <h1 className="uppercase text-4xl">{i18n.gettext("dropdown1")}</h1>
           <button className="px-[20px]" onClick={toggleWhatMakesItDifferent}>
@@ -92,7 +89,7 @@ export default function JoinAsADoctor() {
         {whatMakesItDifferent && <p>Lorem Ipsum1</p>}
       </div>
 
-      <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
+      <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
         <div className="flex justify-between">
           <h1 className="uppercase text-4xl">{i18n.gettext("dropdown2")}</h1>
           <button className="px-[20px]" onClick={toggleHowToUse}>
@@ -102,7 +99,7 @@ export default function JoinAsADoctor() {
         {howToUse && <p>Lorem Ipsum2</p>}
       </div>
 
-      <div className="font-[myriadRegular] border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
+      <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
         <div className="flex justify-between">
           <h1 className="uppercase text-4xl">{i18n.gettext("dropdown3")}</h1>
           <button className="px-[20px]" onClick={toggleIncentives}>
@@ -116,11 +113,11 @@ export default function JoinAsADoctor() {
         <h1 className="mt-6 text-4xl font-raleway font-normal block uppercase md:text-center">
           {i18n.gettext("registrationForm")}
         </h1>
-        <div className="ml-3 font-[myriadRegular]">
+        <div className="ml-3">
           <div className="mt-4 text-start">
             <div className="lg:text-center my-10">
               <h2 
-                className="font-[myriadRegular] text-2xl"
+                className="text-2xl"
               >
                 {i18n.gettext("pleaseFillOut")}
               </h2>
@@ -417,7 +414,7 @@ export default function JoinAsADoctor() {
                   </div>
                 </ol>
               </div>
-              <div className="text-center md:my-10">
+              <div className="text-center md:my-10 font-bold ">
                 <button className="btn btn-orange">{i18n.gettext("submitRegistrationButton")}</button>
               </div>
             </div>

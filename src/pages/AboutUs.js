@@ -9,13 +9,13 @@ import profile from "../components/images/profile.png";
 export default function AboutUs() {
   useContext(Context);
   return (
-    <div className="mx-auto lg:text-center">
-      <div className=" mt-10 text-myDefaultGrey">
+    <div className="mx-auto">
+      <div className="mt-10 text-myDefaultGrey">
         <h1 className="text-4xl font-[myriadBold] block uppercase text-center">
           {i18n.gettext("aboutUsTitle")}
         </h1>
 
-        <h2 className="text-2xl mt-10 mx-8 md:mx-12 font-[myriadLight] block first-letter:uppercase">
+        <h2 className="text-2xl mt-10 mx-8 font-[myriadLight] block md:mx-12  lg:text-center">
           {i18n.gettext("aboutUsDescription")}
         </h2>
       </div>
@@ -34,12 +34,12 @@ export default function AboutUs() {
           ></iframe>
         </div>
 
-        <div className="md:text-center">
+        <div className="text-center">
           <div className="ml-8 md:ml-0">
             <h1 className="text-4xl font-[raleway] font-normal block uppercase">
               {i18n.gettext("aboutUsPartnersTitle")}
             </h1>
-            <h2 className="font-[myriadLight] text-2xl mt-4 mb-10 text-center">
+            <h2 className="font-[myriadLight] text-2xl mt-4 mb-10">
               {i18n.gettext("aboutUsPartnersDescription")}
 
               {/* TODO: Lorem ipsum partners*/}
