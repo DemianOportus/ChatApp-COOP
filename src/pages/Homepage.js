@@ -42,19 +42,19 @@ export default function Homepage() {
           </div>
         </div>
         <div className="ml-2 text-start sm:ml-4 md:mx-[50px] md:mt-[30px]">
-          <h1 className="text-4xl font-[raleway] font-normal uppercase">
+          <h1 className="text-4xl font-[raleway] font-normal uppercase lg:text-center">
             {i18n.gettext("getMatched")}
           </h1>
 
           <div className="mt-4">
-            <h2 className="text-2xl font-[myriadRegular] mb-16  md:mb-4">
+            <h2 className="text-2xl font-[myriadRegular] mb-16  md:mb-4 lg:text-center">
               {i18n.gettext("weAccept")}
             </h2>
             <div className="mt-4">
-              <h2 className="text-2xl font-[raleway] font-medium uppercase mb-4">
+              <h2 className="text-2xl font-[raleway] font-medium uppercase mb-4 lg:text-center">
                 {i18n.gettext("howItWorks")}
               </h2>
-              <ol className="font-[myriadRegular] text-2xl md:grid md:grid-cols-2">
+              <ol className="font-[myriadRegular] text-2xl md:grid md:grid-cols-2 md:gap-x-8">
                 <li>{i18n.gettext("ul1")}</li>
                 <li>{i18n.gettext("ul2")}</li>
                 <li>{i18n.gettext("ul3")}</li>

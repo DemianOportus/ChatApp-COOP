@@ -8,14 +8,13 @@ import { Context } from "../components/Context";
 export default function DataPrivacy() {
   useContext(Context);
   return (
-    <div className=" md:max-w-xl max-w-sm mx-auto ">
-      <div className="mt-10 text-myDefaultGrey">
+    <div className="mx-5 md:mx-10 mt-10 text-myDefaultGrey">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-[myriadBold] uppercase block">
             {i18n.gettext("dataPrivacyTitle")}
           </h1>
         </div>
-
+      <div className="xl:grid xl:grid-cols-2 xl:gap-x-6">
         <div className="ml-0  sm:ml-4 ">
           <h1 className="text-4xl font-[raleway] font-normal block uppercase">
             {i18n.gettext("howWeUseYourDataTitle")}
@@ -26,7 +25,7 @@ export default function DataPrivacy() {
               {i18n.gettext("howWeUseYourDataDescription")}
             </h2>
             <div className="mt-4 font-[myriadLight] text-2xl ">
-              <ol>
+              <ol className="md:grid md:grid-cols-2 md:gap-x-6">
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint1")}</li>
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint2")}</li>
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint3")}</li>
@@ -35,7 +34,7 @@ export default function DataPrivacy() {
           </div>
         </div>
 
-        <div className="text-start  mt-10 sm:ml-4 ">
+        <div className="text-start mt-10 sm:ml-4 lg:mt-0">
           <h1 className="text-4xl font-[raleway] font-normal block uppercase">
             {i18n.gettext("howWeProtectYourDataTitle")}
           </h1>
