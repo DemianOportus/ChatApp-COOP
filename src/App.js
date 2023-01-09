@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import JoinAsAPatient from "./pages/JoinAsAPatient";
 import JoinAsADoctor from "./pages/JoinAsADoctor";
 
+// App
 export default function App() {
   return (
     <>
