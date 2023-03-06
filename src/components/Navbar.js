@@ -1,4 +1,4 @@
-import profile from "./images/profile.png";
+import logo from "./images/logo.png"
 import { Menu } from "@headlessui/react";
 import i18n from "../i18";
 import { useContext } from "react";
@@ -50,16 +50,16 @@ function Navbar() {
       <div className="md:flex md:items-center md:justify-between md:pr-10 md:pl-6">
         <div>
           <div className="flex">
-            <div className="pt-[22px]">
+            <div className="pt-[20px]">
               <img
-                src={profile}
+                src={logo}
                 alt="User Profile"
-                className="w-[4rem] mx-[15px] rounded-full"
+                className="w-[4rem] mx-[15px]"
               />
             </div>
-            <div className="text-[1rem] pb-[20px] pt-[30px] font-[myriadRegular] md:pb-[30px]">
+            <div className="text-[1.5rem] pb-[20px] pt-[40px] font-[myriadRegular] md:pb-[30px]">
               <p>CHAT APP</p>
-              <p>{i18n.gettext("clinicOfTheFuture")}</p>
+              {/* <p>{i18n.gettext("clinicOfTheFuture")}</p> */}
             </div>
           </div>
         </div>

@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { Context } from "../components/Context";
 
 import i18n from "../i18";
-import profile from "./images/profile.png";
+// import profile from "./images/profile.png";
+import logo from "./images/logo.png"
 
 function Footer() {
   useContext(Context);
@@ -30,30 +31,30 @@ function Footer() {
         <div className="hidden md:flex justify-center ">
           <div className="">
             <img
-              src={profile}
+              src={logo}
               alt="User Profile"
-              className="w-[4rem] mx-[15px] rounded-full"
+              className="w-[4rem] mx-[15px]"
             />
           </div>
-          <div className="text-sm font-[myriadBold] pb-[30px] pt-[10px] text-myDefaultGrey">
+          <div className="text-lg font-[myriadBold] pb-[0px] pt-[30px] text-myDefaultGrey">
             <p>CHAT APP</p>
-            <hr className="border-black" />
-            <p>{i18n.gettext("clinicOfTheFuture")}</p>
+            {/* <hr className="border-black" /> */}
+            {/* <p>{i18n.gettext("clinicOfTheFuture")}</p> */}
           </div>
         </div>
       </div>
       <div className="flex justify-center md:hidden">
         <div className="pt-[25px]">
           <img
-            src={profile}
+            src={logo}
             alt="User Profile"
-            className="w-[4rem] mx-[15px] rounded-full"
+            className="w-[4rem] mx-[15px]"
           />
         </div>
-        <div className="text-sm font-[myriadBold] pb-[30px] pt-[30px] text-myDefaultGrey">
+        <div className="text-lg font-[myriadBold] pb-[0px] pt-[30px] text-myDefaultGrey">
           <p>CHAT APP</p>
-          <hr className="border-black" />
-          <p>{i18n.gettext("clinicOfTheFuture")}</p>
+          {/* <hr className="border-black" /> */}
+          {/* <p>{i18n.gettext("clinicOfTheFuture")}</p> */}
         </div>
       </div>
       <div className="text-center mt-7 bg-[#323239] text-white pt-[20px] pb-[50px]">
@@ -92,8 +93,7 @@ function Footer() {
           </p>
         </div>
         <p className="text-sm text-gray-300">
-          {thisYear} CHAT {i18n.gettext("clinicOfTheFuture")} | All rights
-          reserved
+          {thisYear} CHAT | All rights reserved
         </p>
       </div>
     </div>

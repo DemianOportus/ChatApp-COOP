@@ -9,12 +9,12 @@ export default function Homepage() {
   useContext(Context);
   return (
       <div className="text-center mt-10  mx-auto text-myDefaultGrey">
-        <h1 className="text-4xl font-[raleway] uppercase font-semibold">
+        <h1 className="text-4xl font-[raleway] uppercase font-semibold md:pb-8">
           {i18n.gettext("welcomeToChat")}
         </h1>
-        <h1 className="text-4xl font-[raleway] font-semibold uppercase  md:pb-8">
+        {/* <h1 className="text-4xl font-[raleway] font-semibold uppercase md:pb-8">
           {i18n.gettext("clinicOfTheFuture")}
-        </h1>
+        </h1> */}
         {/* Polygon Shape text */}
         <div className="md:hidden div--triangle">
           <h2 className="text-2xl font-[myriadLight]">
