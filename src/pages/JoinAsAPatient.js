@@ -246,7 +246,7 @@ export default function JoinAsAPatient() {
               </div>
               <div className="text-center">
                 <button className="btn btn-orange my-6 font-bold">
-                  {i18n.gettext("SUBMIT REGISTRATION")}
+                  {i18n.gettext("submitRegistrationButton")}
                 </button>
               </div>
             </div>

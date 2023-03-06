@@ -93,7 +93,7 @@ function Footer() {
           </p>
         </div>
         <p className="text-sm text-gray-300">
-          {thisYear} CHAT | All rights reserved
+          {thisYear} CHAT Continuity Health Attachment Technology | All rights reserved
         </p>
       </div>
     </div>

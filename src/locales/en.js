@@ -19,12 +19,12 @@ const en = {
     "We offer a unique system that matches you with a doctor based on your preferences and the preferences of our doctors.",
   getMatched: "Get matched to a doctor",
   weAccept:
-    "We accept unattached patients until we match them with one of our doctors.",
+    "We accept unattached patients until we match you to a family doctor.  Wait times will depend on the availability of family doctors within your region. There is currently a shortage of family doctors.",
   howItWorks: "how the 'match' works",
 
   // Homepage -- Bullet points How the match works
-  ul1: "Visit the ‘Register as a patient’ link to begin your registration",
-  ul2: "Complete a questionnaire",
+  ul1: "Visit the 'Register as a patient' link to begin your registration",
+  ul2: "Complete the registration form",
   ul3: "Receive a notification by email and/or phone about potential match(es) based on your preferences",
   ul4: "Call practice/family doctor and book your first appointment",
   ul5: "No matches? You will be placed in a queue and receive monthly status updates (up to 6 months, unsubscribe anytime)",
@@ -33,7 +33,7 @@ const en = {
   join: "join",
   asPatient: "as a patient",
   asDoctor: "as a doctor",
-  bePartOfTeam: "Be part of our medical team",
+  bePartOfTeam: "Respond to community members' needs, be part of the solution",
   getMatchedWithPatients:
     "Get match with patients that fit into your area of expertise.",
   // Homepage -- Buttons
@@ -130,7 +130,7 @@ const en = {
   genericSocialFrailityQuestion1: "1. Social Fraility Question",
   genericSocialFrailityQuestion2: "2. Social Fraility Question",
   genericSocialFrailityQuestion3: "3. Social Fraility Question",
-  submitRegistrationButton: "Submit registration",
+  submitRegistrationButton: "SUBMIT REGISTRATION",
 
   // Join as a doctor
   li1: "Go to the registration form.",

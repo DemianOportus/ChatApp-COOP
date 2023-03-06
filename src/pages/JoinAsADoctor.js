@@ -414,8 +414,8 @@ export default function JoinAsADoctor() {
                   </div>
                 </ol>
               </div>
-              <div className="text-center md:my-10 font-bold">
-                <button className="btn btn-orange">{i18n.gettext("SUBMIT REGISTRATION")}</button>
+              <div className="text-center md:my-10 font-bold text-transform:capitalize">
+                <button className="btn btn-orange">{i18n.gettext("submitRegistrationButton")}</button>
               </div>
             </div>
           </div>
