@@ -4,20 +4,21 @@ import i18n from "../i18";
 import { Context } from "../components/Context";
 import UserInput from "../components/userInput";
 import Checkbox from "../components/checkbox";
+import assets from "../components/images/asset6.png"
 
 // {i18n.gettext("bePartOfTeam")}
 
 export default function JoinAsAPatient() {
   useContext(Context);
   return (
-      <div className="text-center mt-10 mx-auto text-myDefaultGrey font-[myriadRegular] ">
-        <h1 className="text-4xl font-[raleway] font-bold uppercase mb-10">
+      <div className="text-center mt-10 mx-auto text-myDefaultGrey font-[myriadRegular]">
+        <h1 className="text-4xl font-[raleway] font-bold uppercase mb-8">
           {i18n.gettext("joinPatient")}
         </h1>
 
-        <div className="lg:grid-container lg:grid lg:grid-cols-5 xl:gap-x-10">
+        <div className="lg:grid lg:grid-cols-2 lg:items-center">
           <div 
-            className="div--promos lg:col-span-2  xl:ml-10"
+            className="div--promos mt-10"
           >
             <iframe
               className="responsive-iframe"
@@ -31,14 +32,14 @@ export default function JoinAsAPatient() {
             ></iframe>
           </div>
 
-          <div className="ml-2 text-start sm:ml-4 md:mx-[50px] lg:col-span-3">
-            <h1 className="text-4xl font-[raleway] font-normal">
+          <div className="ml-2 text-start sm:ml-4 md:mx-10">
+            <h1 className="text-4xl font-[raleway] font-normal mb-8">
               {i18n.gettext("howToJoin")}
             </h1>
 
             <div className="mt-4">
               <div className="mt-4">
-                <ol className="text-2xl md:grid md:grid-cols-2 md:gap-x-4">
+                <ol className="text-2xl font-light">
                   <li>{i18n.gettext("ul1")}</li>
                   <li>{i18n.gettext("ul2")}</li>
                   <li>{i18n.gettext("ul3")}</li>
@@ -52,7 +53,7 @@ export default function JoinAsAPatient() {
           </div>
         </div>
         <div className="ml-0 sm:ml-4 md:mx-12">
-          <h1 className="text-4xl font-[raleway] font-normal uppercase my-12">
+          <h1 className="text-4xl font-[raleway] font-normal uppercase my-12 md:text-center">
             {i18n.gettext("registrationForm")}
           </h1>
           <div className="ml-3">
@@ -61,8 +62,10 @@ export default function JoinAsAPatient() {
                 <h2 className="text-2xl mb-3">
                   {i18n.gettext("pleaseFillOut")}
                 </h2>
-                <h2 className="text-2xl mb-3">
-                  {i18n.gettext("registerByEmail")}
+                <h2 className="text-2xl mb-3 mx-4">
+                  {i18n.gettext("registerByEmail1")}
+                  <a className="text-2xl text-myLightBlue" href="#">{i18n.gettext("registerByEmail2")}</a> 
+                  {i18n.gettext("registerByEmail3")}
                 </h2>
                 <a 
                   className="text-2xl underline text-myLightBlue"
@@ -149,7 +152,9 @@ export default function JoinAsAPatient() {
                       id="languagePreferenceInput"
                     />
                   </div>
-                  <li className="font-[myriadBold]">
+                  <div className="flex flex-row">
+                    <div className="basis-2/3">
+                    <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration5")}
                   </li>
                   <h1 className="my-8">
@@ -242,10 +247,16 @@ export default function JoinAsAPatient() {
                       option={i18n.gettext("genericSocialFrailityQuestion3")}
                     />
                   </div>
+                    </div>
+                    <div className="basis-1/3">
+                      <img src={assets} alt="" />
+                    </div>
+                  </div>
+                  
                 </ol>
               </div>
               <div className="text-center">
-                <button className="btn btn-orange my-6 font-bold">
+                <button className="btn btn-orange my-6 font-bold uppercase">
                   {i18n.gettext("submitRegistrationButton")}
                 </button>
               </div>

@@ -97,10 +97,10 @@ function Navbar() {
             >
               {i18n.gettext("about")}
             </Link>
-            <div className="hidden lg:flex gap-8 pl-10">
-              <i className="fa-md fa-brands fa-square-facebook"></i>
-              <i className="fa-md fa-brands fa-square-twitter px-[10px]"></i>
-              <i className="fa-md fa-brands fa-linkedin"></i>
+            <div className="hidden lg:flex gap-2 pl-10">
+              <i className="fa-md fa-brands fa-facebook"></i>
+              <i className="fa-md fa-brands fa-twitter px-[10px]"></i>
+              <i className="fa-md fa-brands fa-instagram"></i>
             </div>
           </div>
         </div>

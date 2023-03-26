@@ -23,9 +23,9 @@ function Footer() {
         <div>
           <p className="uppercase font-bold">{i18n.gettext("findUsOn")}</p>
           <div className="text-center text-myDefaultGrey">
-            <i className="fa-xl fa-brands fa-square-facebook"></i>
-            <i className="fa-xl fa-brands fa-square-twitter px-[10px]"></i>
-            <i className="fa-xl fa-brands fa-linkedin"></i>
+            <i className="fa-xl fa-brands fa-facebook"></i>
+            <i className="fa-xl fa-brands fa-twitter px-[10px]"></i>
+            <i className="fa-xl fa-brands fa-instagram"></i>
           </div>
         </div>
         <div className="hidden md:flex justify-center ">

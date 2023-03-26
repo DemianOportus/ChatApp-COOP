@@ -4,6 +4,7 @@ import i18n from "../i18";
 import { Context } from "../components/Context";
 import UserInput from "../components/userInput";
 import Checkbox from "../components/checkbox";
+import asset4 from "../components/images/asset4.png"
 
 export default function JoinAsADoctor() {
   useContext(Context);
@@ -44,12 +45,12 @@ export default function JoinAsADoctor() {
   }
 
   return (
-    <div className="mx-auto text-myDefaultGrey  font-[myriadRegular] ">
-      <h1 className="text-4xl uppercase text-center pt-[60px] font-[raleway] font-bold">
+    <div className="text-center mt-10 mx-auto text-myDefaultGrey font-[myriadRegular]">
+      <h1 className="text-4xl uppercase text-center mb-8 font-[raleway] font-bold">
         {i18n.gettext("joinDoctor")}
       </h1>
-
-      <div className="lg:grid lg:grid-cols-2 lg:items-center">
+      <div className="flex flex-row">
+      <div className="lg:grid lg:grid-cols-2 lg:items-center basis-2/3">
         <div className="div--promos mt-10">
           <iframe
             className="responsive-iframe"
@@ -64,9 +65,11 @@ export default function JoinAsADoctor() {
         </div>
 
         <div className="text-start ml-2 sm:ml-4 md:mx-10">
-          <h1 className="text-4xl block">{i18n.gettext("howToJoin")}</h1>
+          <h1 className="text-4xl font-[raleway] font-normal mb-8">
+            {i18n.gettext("howToJoin")}
+          </h1>
           <div className="mt-4">
-            <ol className="text-2xl md:grid md:grid-cols-2 md:gap-x-12 lg:gap-x-6">
+            <ol className="text-2xl font-light">
               <li className="">
                 <a className="hover:underline" href="#registrationForm">{i18n.gettext("li1")}</a>
               </li>
@@ -78,8 +81,14 @@ export default function JoinAsADoctor() {
             </div>
         </div>
       </div>
-
-      <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] md:mx-10">
+      <div className="basis-1/3 p-32">
+        <img src={asset4} alt="" />
+      </div>
+      </div>
+     
+      <div className="flex flex-wrap">
+        <div className="flex flex-row">
+        <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] md:mx-10 basis-1/2">
         <div className="flex justify-between">
           <h1 className="uppercase text-4xl">{i18n.gettext("dropdown1")}</h1>
           <button className="px-[20px]" onClick={toggleWhatMakesItDifferent}>
@@ -89,7 +98,7 @@ export default function JoinAsADoctor() {
         {whatMakesItDifferent && <p>Lorem Ipsum1</p>}
       </div>
 
-      <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
+      <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10 basis-1/2~````">
         <div className="flex justify-between">
           <h1 className="uppercase text-4xl">{i18n.gettext("dropdown2")}</h1>
           <button className="px-[20px]" onClick={toggleHowToUse}>
@@ -98,6 +107,8 @@ export default function JoinAsADoctor() {
         </div>
         {howToUse && <p>Lorem Ipsum2</p>}
       </div>
+        </div>
+      
 
       <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
         <div className="flex justify-between">
@@ -108,24 +119,26 @@ export default function JoinAsADoctor() {
         </div>
         {incentives && <p>Lorem Ipsum3</p>}
       </div>
+      </div>
+      
 
-        <div className="ml-0  sm:ml-4" id="registrationForm">
-        <h1 className="mt-6 text-4xl font-raleway font-normal block uppercase md:text-center">
+        <div className="ml-0  sm:ml-4 md:mx-12" id="registrationForm">
+        <h1 className="my-12 text-4xl font-raleway font-normal block uppercase md:text-center">
           {i18n.gettext("registrationForm")}
         </h1>
+        
         <div className="ml-3">
           <div className="mt-4 text-start">
             <div className="lg:text-center my-10">
-              <h2 
-                className="text-2xl"
-              >
+              <h2 className="text-2xl mb-3">
                 {i18n.gettext("pleaseFillOut")}
               </h2>
-
-              <a 
-                className=" text-2xl underline text-myLightBlue"
-                href="/data-privacy"
-              >
+              <h2 className="text-2xl mb-3 mx-4">
+                  {i18n.gettext("registerByEmail1")}
+                  <a className="text-2xl text-myLightBlue" href="#">{i18n.gettext("registerByEmail2")}</a> 
+                  {i18n.gettext("registerByEmail3")}
+              </h2>
+              <a className="text-2xl underline text-myLightBlue" href="/data-privacy">
                 <i class="fa-solid fa-circle-exclamation text-black pr-4"></i> {i18n.gettext("learnAboutWhyWeAsk")}
               </a>
             </div>
@@ -414,8 +427,8 @@ export default function JoinAsADoctor() {
                   </div>
                 </ol>
               </div>
-              <div className="text-center md:my-10 font-bold text-transform:capitalize">
-                <button className="btn btn-orange">{i18n.gettext("submitRegistrationButton")}</button>
+              <div className="text-center md:my-10 font-bold">
+                <button className="btn btn-orange uppercase">{i18n.gettext("submitRegistrationButton")}</button>
               </div>
             </div>
           </div>

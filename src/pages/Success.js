@@ -19,7 +19,7 @@ export default function Success() {
         <h1 className="text-2xl">{i18n.gettext("successText")}</h1>
         <h1 className="text-2xl lg:mt-4">{i18n.gettext("successText2")}</h1>
         <button className="btn btn-orange my-6 font-semibold uppercase lg:mt-24">
-          <a href="/">Home page</a>
+          <a href="/">Back</a>
         </button>
       </div>
     </div>

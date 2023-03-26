@@ -3,11 +3,10 @@
 const en = {
   // Navbar and appendNavbar.js
   language: "Français",
-  joinPatient: "Join as a patient",
-  joinDoctor: "Join as a doctor",
+  joinPatient: "Join as a Patient",
+  joinDoctor: "Join as a Doctor",
   textSizeIncrease: "Text Size +",
   textSizeDecrease: "Text Size -",
-  clinicOfTheFuture: "Clinic of the future",
   home: "Home",
   forPatients: "For patients",
   forDoctors: "For doctors",
@@ -18,8 +17,10 @@ const en = {
   whatWeOffer:
     "We offer a unique system that matches you with a doctor based on your preferences and the preferences of our doctors.",
   getMatched: "Get matched to a doctor",
+  bePartOfTeam1: "Respond to community members' needs, ",
+  bePartOfTeam2: "be part of the solution",
   weAccept:
-    "We accept unattached patients until we match you to a family doctor.  Wait times will depend on the availability of family doctors within your region. There is currently a shortage of family doctors.",
+    "We accept unattached patients until we match you to a family doctor. Wait times will depend on the availability of family doctors within your region. There is currently a shortage of family doctors.",
   howItWorks: "how the 'match' works",
 
   // Homepage -- Bullet points How the match works
@@ -33,7 +34,6 @@ const en = {
   join: "join",
   asPatient: "as a patient",
   asDoctor: "as a doctor",
-  bePartOfTeam: "Respond to community members' needs, be part of the solution",
   getMatchedWithPatients:
     "Get match with patients that fit into your area of expertise.",
   // Homepage -- Buttons
@@ -71,7 +71,7 @@ const en = {
   aboutUsTitle: "About us",
   aboutUsDescription:
     "Continuity Health Attachment Technology (CHAT) is a matching service linking patients without a family doctor to a family doctor within their community and surrounding areas. The matching is based on health and social needs of both patients and family doctors.  The service integrates a centralized waiting list registry system that is accessible across all provinces to serve all Canadians.",
-  aboutUsPartnersTitle: "Partners",
+  aboutUsPartnersTitle: "Contributors",
   aboutUsPartnersDescription:
     "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 
@@ -79,8 +79,12 @@ const en = {
   howToJoin: "How to join:",
   registrationForm: "Registration form",
   pleaseFillOut: "Please fill out the form below to register.",
-  registerByEmail:
-    "Or, if you prefer to register by email, download the registration form PDF (mb) here, however it takes longer to process applications done by e-mail.",
+  registerByEmail1:
+    "Or, if you prefer to register by e-mail, ",
+  registerByEmail2:
+    "download the registration form PDF (mb) here. ",
+  registerByEmail3:
+    "Please note that e-mail registrations take longer to process.",
   learnAboutWhyWeAsk:
     "Learn about why we ask these question and how we protect your data",
   boldListOfRegistration1: "Eligibility",
@@ -130,11 +134,11 @@ const en = {
   genericSocialFrailityQuestion1: "1. Social Fraility Question",
   genericSocialFrailityQuestion2: "2. Social Fraility Question",
   genericSocialFrailityQuestion3: "3. Social Fraility Question",
-  submitRegistrationButton: "SUBMIT REGISTRATION",
+  submitRegistrationButton: "Submit Registration",
 
   // Join as a doctor
   li1: "Go to the registration form.",
-  li2: "Complete a questionnaire.",
+  li2: "Complete the registration form.",
   li3: "Receive a notification about potential matches based on your questionnaire.",
   li4: "Accept  patients.",
   dropdown1: "what makes this solution different",
@@ -181,14 +185,14 @@ const en = {
   otherSpecialtiesOption: "21. Other:",
 
   physicianChronicIllnessSpecialties: "Physician chronic illness specialties:",
-  ALSOption: "1. ALS (Lou Gehrig’s Disease)",
-  alzheimersOption: "2. Alzheimer’s Disease and other Dementias",
+  ALSOption: "1. ALS (Lou Gehrig's Disease)",
+  alzheimersOption: "2. Alzheimer's Disease and other Dementias",
   arthritisOption: "3. Arthritis",
   asthmaOption: "4. Asthma",
   cancerOption: "5. Cancer",
   chronicObstructiveOption: "6. Chronic Obstructive Pulmonary Disease (COPD)",
   crohnsOption:
-    "7. Crohn’s Disease, Ulcerative Colitis, Other Inflammatory Bowel Diseases, Irritable Bowel Syndrome",
+    "7. Crohn's Disease, Ulcerative Colitis, Other Inflammatory Bowel Diseases, Irritable Bowel Syndrome",
   cysticFibrosisOption: "8. Cystic Fibrosis",
   otherChronicIllnessSpecialtiesOption: "9. Others:",
 

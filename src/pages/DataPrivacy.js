@@ -9,11 +9,11 @@ export default function DataPrivacy() {
   useContext(Context);
   return (
     <div className="mx-5 md:mx-10 mt-10 text-myDefaultGrey">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl font-[myriadBold] uppercase block">
-            {i18n.gettext("dataPrivacyTitle")}
-          </h1>
-        </div>
+      <div className="text-center mb-10">
+        <h1 className="text-4xl font-[myriadBold] uppercase block">
+          {i18n.gettext("dataPrivacyTitle")}
+        </h1>
+      </div>
       <div className="xl:grid xl:grid-cols-2 xl:gap-x-6">
         <div className="ml-0  sm:ml-4 ">
           <h1 className="text-4xl font-[raleway] font-normal block uppercase">
@@ -25,7 +25,7 @@ export default function DataPrivacy() {
               {i18n.gettext("howWeUseYourDataDescription")}
             </h2>
             <div className="mt-4 font-[myriadLight] text-2xl ">
-              <ol className="md:grid md:grid-cols-2 md:gap-x-6">
+              <ol>
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint1")}</li>
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint2")}</li>
                 <li>{i18n.gettext("howWeUseYourDataBulletPoint3")}</li>
@@ -46,6 +46,12 @@ export default function DataPrivacy() {
           </div>
         </div>
       </div>
+      <div className="text-center md:my-10 font-bold">
+        <button className="whitespace-pre btn btn-orange my-6 font-semibold uppercase">
+          <a href="/">Back</a>
+        </button>
+      </div>
     </div>
+
   );
 }

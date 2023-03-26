@@ -107,7 +107,7 @@ ol > li::marker {
 }
 /* Button Style*/
 .btn {
-  @apply font-raleway py-2 px-4 rounded-xl md:text-2xl md:px-6 md:py-4;
+  @apply font-raleway py-2 px-4 rounded-xl md:text-2xl md:px-6 md:py-4 uppercase;
 }
 .btn-orange {
   @apply bg-myOrange text-white;
@@ -116,5 +116,5 @@ ol > li::marker {
   @apply bg-myYellow;
 }
 .btn-purple {
-  @apply font-raleway py-2 px-4 rounded-xl text-lg bg-myDarkPurple uppercase text-white font-medium;
+  @apply bg-myDarkPurple text-white;
 }
