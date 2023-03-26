@@ -4,7 +4,7 @@ import i18n from "../i18";
 import { Context } from "../components/Context";
 import UserInput from "../components/userInput";
 import Checkbox from "../components/checkbox";
-import assets from "../components/images/asset6.png"
+import doctorAndPatient from "../components/images/doctorAndPatient.png"
 
 // {i18n.gettext("bePartOfTeam")}
 
@@ -15,28 +15,25 @@ export default function JoinAsAPatient() {
         <h1 className="text-4xl font-[raleway] font-bold uppercase mb-8">
           {i18n.gettext("joinPatient")}
         </h1>
-
-        <div className="lg:grid lg:grid-cols-2 lg:items-center">
-          <div 
-            className="div--promos mt-10"
-          >
-            <iframe
-              className="responsive-iframe"
-              width="1153"
-              height="574"
-              src="https://www.youtube.com/embed/tks8vUwh3wM"
-              title="iPhone 14 - TRAILER"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+        <div class="flex flex-row">
+          <div class="basis-2/5">
+            <div className="div--promos mt-10">
+              <iframe
+                className="responsive-iframe"
+                width="1153"
+                height="574"
+                src="https://www.youtube.com/embed/tks8vUwh3wM"
+                title="iPhone 14 - TRAILER"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-
-          <div className="ml-2 text-start sm:ml-4 md:mx-10">
-            <h1 className="text-4xl font-[raleway] font-normal mb-8">
+          <div class="basis-3/5 ml-2 text-start md:mx-10">
+            <h1 className="text-3xl font-[raleway] font-normal mb-8 mt-10">
               {i18n.gettext("howToJoin")}
             </h1>
-
             <div className="mt-4">
               <div className="mt-4">
                 <ol className="text-2xl font-light">
@@ -52,6 +49,7 @@ export default function JoinAsAPatient() {
             </div>
           </div>
         </div>
+        
         <div className="ml-0 sm:ml-4 md:mx-12">
           <h1 className="text-4xl font-[raleway] font-normal uppercase my-12 md:text-center">
             {i18n.gettext("registrationForm")}
@@ -152,8 +150,8 @@ export default function JoinAsAPatient() {
                       id="languagePreferenceInput"
                     />
                   </div>
-                  <div className="flex flex-row">
-                    <div className="basis-2/3">
+                  <div className="lg:flex lg:flex-row">
+                    <div className="lg:basis-2/3">
                     <li className="font-[myriadBold]">
                     {i18n.gettext("boldListOfRegistration5")}
                   </li>
@@ -248,8 +246,8 @@ export default function JoinAsAPatient() {
                     />
                   </div>
                     </div>
-                    <div className="basis-1/3">
-                      <img src={assets} alt="" />
+                    <div className="lg:basis-1/3 lg:mt-12 lg:pt-12">
+                      <img src={doctorAndPatient} alt="doctorAndPatient" />
                     </div>
                   </div>
                   

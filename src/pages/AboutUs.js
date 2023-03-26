@@ -4,7 +4,7 @@ import i18n from "../i18";
 import { Context } from "../components/Context";
 import DFM from "../components/images/DFM.png";
 import jumpingElephants from "../components/images/jumpingElephants.png";
-import asset from "../components/images/asset7.png"
+import connect from "../components/images/connect.png"
 
 // {i18n.gettext("bePartOfTeam")}
 
@@ -24,7 +24,7 @@ export default function AboutUs() {
         </h2>
         </div>
         <div className="basis-1/6 px-8">
-          <img src={asset} alt="" />
+          <img src={connect} alt="" />
         </div>
       </div>
       {/* 1153 vs 574 */}
@@ -55,7 +55,7 @@ export default function AboutUs() {
             </div>
           </div>
           <button className="btn btn-orange my-6 font-semibold uppercase lg:mt-10">
-            <a href="/">Back</a>
+            <a className="px-10" href="/">Back</a>
           </button>
         </div>
       </div>

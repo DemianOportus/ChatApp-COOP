@@ -4,7 +4,7 @@ import i18n from "../i18";
 import { Context } from "../components/Context";
 import UserInput from "../components/userInput";
 import Checkbox from "../components/checkbox";
-import asset4 from "../components/images/asset4.png"
+import chatApp from "../components/images/chatApp.png"
 
 export default function JoinAsADoctor() {
   useContext(Context);
@@ -49,23 +49,23 @@ export default function JoinAsADoctor() {
       <h1 className="text-4xl uppercase text-center mb-8 font-[raleway] font-bold">
         {i18n.gettext("joinDoctor")}
       </h1>
-      <div className="flex flex-row">
-      <div className="lg:grid lg:grid-cols-2 lg:items-center basis-2/3">
-        <div className="div--promos mt-10">
-          <iframe
-            className="responsive-iframe"
-            width="1153"
-            height="574"
-            src="https://www.youtube.com/embed/tks8vUwh3wM"
-            title="iPhone 14 - TRAILER"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+      <div className="md:flex md:flex-row">
+        <div className="md:basis-2/5">
+          <div className="div--promos mt-10">
+            <iframe
+              className="responsive-iframe"
+              width="1153"
+              height="574"
+              src="https://www.youtube.com/embed/tks8vUwh3wM"
+              title="iPhone 14 - TRAILER"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
-
-        <div className="text-start ml-2 sm:ml-4 md:mx-10">
-          <h1 className="text-4xl font-[raleway] font-normal mb-8">
+        <div className="md:basis-3/5 ml-2 text-start md:mx-10">
+          <h1 className="text-3xl font-[raleway] font-normal mb-8 mt-10">
             {i18n.gettext("howToJoin")}
           </h1>
           <div className="mt-4">
@@ -78,47 +78,44 @@ export default function JoinAsADoctor() {
               <li>{i18n.gettext("li4")}</li>
             </ol>
             <hr className="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700 lg:hidden" />
+          </div>
+        </div>
+      </div>
+
+      <div className="md:flex md:flex-row">
+      <div className="md:basis-1/5"></div>
+        <div className="md:basis-3/5 pt-10">
+          <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
+            <div className="flex justify-between">
+              <h1 className="uppercase text-4xl">{i18n.gettext("dropdown1")}</h1>
+              <button className="px-[20px]" onClick={toggleWhatMakesItDifferent}>
+                <i class={`fa-solid fa-angle-down fa-2xl ${whatMakesItDifferent && '-rotate-90'}`} ></i>
+              </button>
             </div>
+            {whatMakesItDifferent && <p className="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat purus arcu, eu varius orci vestibulum vel. Vivamus vel elementum tortor, ut dapibus augue. Vestibulum et porttitor nunc. Phasellus et aliquet purus. Aenean quis vulputate lorem. Cras diam justo, finibus vel condimentum sed, tempus in magna. Nulla malesuada tincidunt ligula, et malesuada ante ornare eu. Praesent scelerisque nulla ut velit euismod lobortis. Aenean congue odio eget venenatis pellentesque. Nullam tristique felis risus, ac ullamcorper nulla sodales sit amet.</p>}
+          </div>
+          <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
+            <div className="flex justify-between">
+              <h1 className="uppercase text-4xl">{i18n.gettext("dropdown2")}</h1>
+              <button className="px-[20px]" onClick={toggleHowToUse}>
+                <i class={`fa-solid fa-angle-down fa-2xl ${howToUse && '-rotate-90'}`}></i>
+              </button>
+            </div>
+            {howToUse && <p className="text-left">Integer convallis ante sit amet pretium pharetra. Vivamus at tellus ut elit pellentesque tempus ac eget ipsum. Mauris auctor finibus ex, et placerat purus sagittis sit amet. Sed tincidunt ipsum sit amet tellus pretium tempus ut quis nulla. Ut interdum vitae lectus vel lacinia. Sed viverra sed elit fermentum faucibus. Etiam fermentum, purus ac feugiat posuere, sapien nisi congue lectus, ut lacinia turpis risus vel ipsum.</p>}
+          </div>
+          <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
+            <div className="flex justify-between">
+              <h1 className="uppercase text-4xl">{i18n.gettext("dropdown3")}</h1>
+                <button className="px-[20px]" onClick={toggleIncentives}>
+                <i class={`fa-solid fa-angle-down fa-2xl ${incentives && '-rotate-90'}`}></i>
+                </button>
+            </div>
+            {incentives && <p className="text-left">Ut vulputate quis felis vel convallis. Vivamus magna lectus, consequat in vehicula vitae, vehicula et felis. Nulla facilisi. Suspendisse scelerisque congue arcu sit amet ultricies. Cras congue mollis purus, vitae porta diam efficitur vel. Curabitur commodo scelerisque pharetra. Fusce tincidunt diam sed nunc faucibus gravida.</p>}
+          </div>
         </div>
-      </div>
-      <div className="basis-1/3 p-32">
-        <img src={asset4} alt="" />
-      </div>
-      </div>
-     
-      <div className="flex flex-wrap">
-        <div className="flex flex-row">
-        <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] md:mx-10 basis-1/2">
-        <div className="flex justify-between">
-          <h1 className="uppercase text-4xl">{i18n.gettext("dropdown1")}</h1>
-          <button className="px-[20px]" onClick={toggleWhatMakesItDifferent}>
-            <i class={`fa-solid fa-angle-down fa-2xl ${whatMakesItDifferent && '-rotate-90'}`} ></i>
-          </button>
+        <div className="md:basis-1/5 md:mx-8">
+          <img src={chatApp} alt="" />
         </div>
-        {whatMakesItDifferent && <p>Lorem Ipsum1</p>}
-      </div>
-
-      <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10 basis-1/2~````">
-        <div className="flex justify-between">
-          <h1 className="uppercase text-4xl">{i18n.gettext("dropdown2")}</h1>
-          <button className="px-[20px]" onClick={toggleHowToUse}>
-            <i class={`fa-solid fa-angle-down fa-2xl ${howToUse && '-rotate-90'}`}></i>
-          </button>
-        </div>
-        {howToUse && <p>Lorem Ipsum2</p>}
-      </div>
-        </div>
-      
-
-      <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
-        <div className="flex justify-between">
-          <h1 className="uppercase text-4xl">{i18n.gettext("dropdown3")}</h1>
-          <button className="px-[20px]" onClick={toggleIncentives}>
-            <i class={`fa-solid fa-angle-down fa-2xl ${incentives && '-rotate-90'}`}></i>
-          </button>
-        </div>
-        {incentives && <p>Lorem Ipsum3</p>}
-      </div>
       </div>
       
 

@@ -48,7 +48,7 @@ export default function DataPrivacy() {
       </div>
       <div className="text-center md:my-10 font-bold">
         <button className="whitespace-pre btn btn-orange my-6 font-semibold uppercase">
-          <a href="/">Back</a>
+          <a className="px-10" href="/">Back</a>
         </button>
       </div>
     </div>
