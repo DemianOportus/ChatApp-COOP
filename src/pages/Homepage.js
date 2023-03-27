@@ -4,6 +4,7 @@ import i18n from "../i18";
 import { Context } from "../components/Context";
 import joinUs from "../components/images/joinUs.png"
 import banner from "../components/images/banner.png"
+import doctors from "../components/images/doctors.png"
 
 export default function Homepage() {
   useContext(Context);
@@ -46,11 +47,11 @@ export default function Homepage() {
               <h2 className="text-2xl font-[raleway] font-medium uppercase mb-4 text-center">
                 {i18n.gettext("howItWorks")}
               </h2>
-              <div class="flex flex-row">
-              <div class="basis-1/4 max-w-xs px-5 mr-20">
+              <div class="lg:flex lg:flex-row">
+              <div class="lg:basis-1/4 lg:max-w-xs md:px-5 lg:mr-20">
                 <img src={joinUs} alt="banner"/>
               </div>
-              <div class="basis-1/2 lg:items-center">
+              <div class="lg:basis-1/2 lg:items-center">
                 <ol className="font-[myriadLight] text-2xl">
                   <li>{i18n.gettext("ul1")}</li>
                   <li>{i18n.gettext("ul2")}</li>
@@ -60,7 +61,7 @@ export default function Homepage() {
                   <li>{i18n.gettext("ul6")}</li>
                 </ol>
               </div>
-              <div class="basis-1/4"></div>
+              <div class="lg:basis-1/4"></div>
               </div>
             </div>
           <div className="hidden text-center md:my-10 lg:block">
@@ -87,7 +88,7 @@ export default function Homepage() {
               {i18n.gettext("getMatchedWithPatients")}
             </h2>
           </div>
-          <div className="hidden text-center md:my-10 lg:block">
+          <div className="hidden text-center md:my-10 lg:block md:pb-10">
             <button className="btn-purple btn">
               <a href="/join-as-a-doctor">
                 {i18n.gettext("joinAsDoctor")}

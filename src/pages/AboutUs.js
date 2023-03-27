@@ -23,7 +23,8 @@ export default function AboutUs() {
           {i18n.gettext("aboutUsDescription")}
         </h2>
         </div>
-        <div className="basis-1/6 px-8">
+
+        <div className="basis-1/6 px-6">
           <img src={connect} alt="" />
         </div>
       </div>

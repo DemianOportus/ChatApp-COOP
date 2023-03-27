@@ -250,10 +250,9 @@ export default function JoinAsAPatient() {
                       <img src={doctorAndPatient} alt="doctorAndPatient" />
                     </div>
                   </div>
-                  
                 </ol>
               </div>
-              <div className="text-center">
+              <div className="text-center py-10">
                 <button className="btn btn-orange my-6 font-bold uppercase">
                   {i18n.gettext("submitRegistrationButton")}
                 </button>

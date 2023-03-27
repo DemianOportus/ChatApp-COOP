@@ -5,6 +5,7 @@ import { Context } from "../components/Context";
 import UserInput from "../components/userInput";
 import Checkbox from "../components/checkbox";
 import chatApp from "../components/images/chatApp.png"
+import doctors from "../components/images/doctors.png"
 
 export default function JoinAsADoctor() {
   useContext(Context);
@@ -83,38 +84,40 @@ export default function JoinAsADoctor() {
       </div>
 
       <div className="md:flex md:flex-row">
-      <div className="md:basis-1/5"></div>
-        <div className="md:basis-3/5 pt-10">
-          <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
-            <div className="flex justify-between">
-              <h1 className="uppercase text-4xl">{i18n.gettext("dropdown1")}</h1>
+      <div className="md:basis-1/5 md:mx-8">
+        <img src={chatApp} alt="chatApp" />
+      </div>
+      <div className="md:basis-3/5 pt-10">
+        <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
+          <div className="flex justify-between">
+            <h1 className="uppercase text-4xl">{i18n.gettext("dropdown1")}</h1>
               <button className="px-[20px]" onClick={toggleWhatMakesItDifferent}>
                 <i class={`fa-solid fa-angle-down fa-2xl ${whatMakesItDifferent && '-rotate-90'}`} ></i>
               </button>
             </div>
-            {whatMakesItDifferent && <p className="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat purus arcu, eu varius orci vestibulum vel. Vivamus vel elementum tortor, ut dapibus augue. Vestibulum et porttitor nunc. Phasellus et aliquet purus. Aenean quis vulputate lorem. Cras diam justo, finibus vel condimentum sed, tempus in magna. Nulla malesuada tincidunt ligula, et malesuada ante ornare eu. Praesent scelerisque nulla ut velit euismod lobortis. Aenean congue odio eget venenatis pellentesque. Nullam tristique felis risus, ac ullamcorper nulla sodales sit amet.</p>}
+            {whatMakesItDifferent && <p className="text-left text-xl lg:mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat purus arcu, eu varius orci vestibulum vel. Vivamus vel elementum tortor, ut dapibus augue. Vestibulum et porttitor nunc. Phasellus et aliquet purus. Aenean quis vulputate lorem. Cras diam justo, finibus vel condimentum sed, tempus in magna. Nulla malesuada tincidunt ligula, et malesuada ante ornare eu. Praesent scelerisque nulla ut velit euismod lobortis. Aenean congue odio eget venenatis pellentesque. Nullam tristique felis risus, ac ullamcorper nulla sodales sit amet.</p>}
           </div>
           <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
             <div className="flex justify-between">
               <h1 className="uppercase text-4xl">{i18n.gettext("dropdown2")}</h1>
               <button className="px-[20px]" onClick={toggleHowToUse}>
                 <i class={`fa-solid fa-angle-down fa-2xl ${howToUse && '-rotate-90'}`}></i>
-              </button>
+              </button>              
             </div>
-            {howToUse && <p className="text-left">Integer convallis ante sit amet pretium pharetra. Vivamus at tellus ut elit pellentesque tempus ac eget ipsum. Mauris auctor finibus ex, et placerat purus sagittis sit amet. Sed tincidunt ipsum sit amet tellus pretium tempus ut quis nulla. Ut interdum vitae lectus vel lacinia. Sed viverra sed elit fermentum faucibus. Etiam fermentum, purus ac feugiat posuere, sapien nisi congue lectus, ut lacinia turpis risus vel ipsum.</p>}
+            {howToUse && <p className="text-left text-xl lg:mt-4">Integer convallis ante sit amet pretium pharetra. Vivamus at tellus ut elit pellentesque tempus ac eget ipsum. Mauris auctor finibus ex, et placerat purus sagittis sit amet. Sed tincidunt ipsum sit amet tellus pretium tempus ut quis nulla. Ut interdum vitae lectus vel lacinia. Sed viverra sed elit fermentum faucibus. Etiam fermentum, purus ac feugiat posuere, sapien nisi congue lectus, ut lacinia turpis risus vel ipsum.</p>}
           </div>
           <div className="border-b-[1px] border-myDefaultGrey mx-[15px] pb-[30px] pt-[20px] md:mx-10">
             <div className="flex justify-between">
               <h1 className="uppercase text-4xl">{i18n.gettext("dropdown3")}</h1>
-                <button className="px-[20px]" onClick={toggleIncentives}>
+              <button className="px-[20px]" onClick={toggleIncentives}>
                 <i class={`fa-solid fa-angle-down fa-2xl ${incentives && '-rotate-90'}`}></i>
-                </button>
+              </button>
             </div>
-            {incentives && <p className="text-left">Ut vulputate quis felis vel convallis. Vivamus magna lectus, consequat in vehicula vitae, vehicula et felis. Nulla facilisi. Suspendisse scelerisque congue arcu sit amet ultricies. Cras congue mollis purus, vitae porta diam efficitur vel. Curabitur commodo scelerisque pharetra. Fusce tincidunt diam sed nunc faucibus gravida.</p>}
+            {incentives && <p className="text-left text-xl lg:mt-4">Ut vulputate quis felis vel convallis. Vivamus magna lectus, consequat in vehicula vitae, vehicula et felis. Nulla facilisi. Suspendisse scelerisque congue arcu sit amet ultricies. Cras congue mollis purus, vitae porta diam efficitur vel. Curabitur commodo scelerisque pharetra. Fusce tincidunt diam sed nunc faucibus gravida.</p>}
           </div>
         </div>
-        <div className="md:basis-1/5 md:mx-8">
-          <img src={chatApp} alt="" />
+        <div className="md:basis-1/5 md:mx-8 md:my-4">
+          <img src={doctors} alt="doctors" />
         </div>
       </div>
       
@@ -424,7 +427,7 @@ export default function JoinAsADoctor() {
                   </div>
                 </ol>
               </div>
-              <div className="text-center md:my-10 font-bold">
+              <div className="text-center md:my-10 font-bold py-10">
                 <button className="btn btn-orange uppercase">{i18n.gettext("submitRegistrationButton")}</button>
               </div>
             </div>
