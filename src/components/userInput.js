@@ -1,7 +1,7 @@
 export default function userInput(props) {
   return (
     <div className="justify-start">
-      <div className="mb-3 xl:w-96">
+      <div className="mb-3">
         <label
           htmlFor="exampleEmail0"
           className="form-label inline-block mb-2 text-gray-700 w-full"
@@ -12,7 +12,7 @@ export default function userInput(props) {
             className="
         form-control
         block
-        w-11/12
+        w-full
         px-3
         py-1.5
         text-base

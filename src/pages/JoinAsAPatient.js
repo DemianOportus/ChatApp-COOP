@@ -72,190 +72,324 @@ export default function JoinAsAPatient() {
                   <i class="fa-solid fa-circle-exclamation text-black pr-4"></i> {i18n.gettext("learnAboutWhyWeAsk")}
                 </a>
               </div>
-              <div className="mt-4 font-[myriadLight] text-2xl">
-                <ol>
-                  <li className="font-[myriadBold]">
-                    {i18n.gettext("boldListOfRegistration1")}
-                  </li>
-                  <div className="md:grid md:grid-cols-2 lg:grid-cols-3">
-                    <Checkbox
-                      id="iAmCurretnlyWithoutDoctorCheckbox"
-                      option={i18n.gettext("iAmCurrentlyWithoutDoctor")}
-                    />
-                    <Checkbox
-                      id="iAmCanadianCheckbox"
-                      option={i18n.gettext("iAmCanadian")}
-                    />
-                  </div>
 
-                  <li className="font-[myriadBold]">
-                    {i18n.gettext("boldListOfRegistration2")}
-                  </li>
-
-                  <div className="md:grid md:grid-cols-2 lg:grid-cols-3">
+              <div className="mt-4 pt-8 font-[myriadLight] text-2xl">
+                <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <UserInput
+                    myLabel={i18n.gettext("firstNameIs")}
+                    type="text"
+                    id="firstNameInput"
+                  />
+                  <UserInput
+                    myLabel={i18n.gettext("lastNameIs")}
+                    type="text"
+                    id="lastNameInput"
+                  />
+                  <UserInput
+                    myLabel={i18n.gettext("dateOfBirthIs")}
+                    type="date"
+                    id="dateOfBirthInput"
+                  />
+                  <div className="col-span-2 m--2">
                     <UserInput
-                      myLabel={i18n.gettext("firstNameIs")}
-                      type="text"
-                      id="firstNameInput"
-                    />
-                    <UserInput
-                      myLabel={i18n.gettext("lastNameIs")}
-                      type="text"
-                      id="lastNameInput"
-                    />
-                    <UserInput
-                      myLabel={i18n.gettext("dateOfBirthIs")}
-                      type="date"
-                      id="dateOfBirthInput"
-                    />
-                    <UserInput
-                      myLabel={i18n.gettext("homeAddressIs")}
+                      myLabel={i18n.gettext("Address")}
                       type="text"
                       id="homeAddressInput"
                     />
-
-                    <UserInput
-                      myLabel={i18n.gettext("provinceIs")}
-                      type="text"
-                      id="provinceInput"
-                    />
                   </div>
-
-                  <li className="font-[myriadBold]">
-                    {i18n.gettext("boldListOfRegistration3")}
-                  </li>
-                  <h1> {i18n.gettext("usesYourPostalCode")}</h1>
                   <UserInput
-                    myLabel={i18n.gettext("postalCodeIs")}
+                    myLabel={i18n.gettext("emailAddressIs")}
                     type="text"
-                    id="postalCodeInput"
+                    id="emailAddressIs"
                   />
-                  <li className="font-[myriadbold]">
-                    {i18n.gettext("boldListOfRegistration4")}
-                  </li>
-                  <div className="md:grid md:grid-cols-2 lg:grid-cols-3">
-                    <UserInput
-                      myLabel={i18n.gettext("emailAddressIs")}
+                  <UserInput
+                    myLabel={i18n.gettext("phoneNumberIs")}
+                    type="text"
+                    id="phoneNumberInput"
+                  />
+                </div>
+
+                <div className="my-8">
+                  <h1 className="my-4">
+                    {i18n.gettext("communicationPreference")}
+                  </h1>
+                  <div className="md:grid md:grid-cols-3">
+                    <Checkbox
+                      id="communicationPreferenceOption1Checkbox"
+                      option={i18n.gettext("communicationPreferenceOption1")}
+                    />
+                    <Checkbox
+                      id="communicationPreferenceOption2Checkbox"
+                      option={i18n.gettext("communicationPreferenceOption2")}
+                    />
+                  </div>
+                </div>
+
+                <div className="my-8">
+                  <Checkbox
+                    id="acceptPolicyCheckbox"
+                    option={i18n.gettext("acceptPolicy")}
+                  />
+
+                  <div>
+                    <h1 className="my-8">
+                      {i18n.gettext("languagePreference")}
+                    </h1>
+                    <div className="md:grid md:grid-cols-3">
+                      <Checkbox
+                        id="languagePreferenceOption1Checkbox"
+                        option={i18n.gettext("languagePreferenceOption1")}
+                      />
+                      <Checkbox
+                        id="languagePreferenceOption2Checkbox"
+                        option={i18n.gettext("languagePreferenceOption2")}
+                      />
+                      <Checkbox
+                        id="languagePreferenceOption3Checkbox"
+                        option={i18n.gettext("languagePreferenceOption3")}
+                      />
+                      <UserInput
+                      myLabel={i18n.gettext("languageOtherPreferred")}
                       type="text"
-                      id="emailAddressIs"
-                    />
-                    <UserInput
-                      myLabel={i18n.gettext("phoneNumberIs")}
-                      type="text"
-                      id="phoneNumberInput"
-                    />
-                    <UserInput
-                      myLabel={i18n.gettext("languagePreference")}
-                      type="text"
-                      id="languagePreferenceInput"
-                    />
-                  </div>
-                  <div className="lg:flex lg:flex-row">
-                    <div className="lg:basis-2/3">
-                    <li className="font-[myriadBold]">
-                    {i18n.gettext("boldListOfRegistration5")}
-                  </li>
-                  <h1 className="my-8">
-                    {" "}
-                    {i18n.gettext("genericQuestionsAboutPhysicalHealth")}
-                  </h1>
-                  <div className="md:grid md:grid-cols-3">
-                    <Checkbox
-                      id="genericPhysicalQuestion1Checkbox"
-                      option={i18n.gettext("genericPhysicalQuestion1")}
-                    />
-                    <Checkbox
-                      id="genericPhysicalQuestion2Checkbox"
-                      option={i18n.gettext("genericPhysicalQuestion2")}
-                    />
-                    <Checkbox
-                      id="genericPhysicalQuestion1Checkbox"
-                      option={i18n.gettext("genericPhysicalQuestion2")}
-                    />
-                  </div>
-                  <h1 className="my-8">
-                    {" "}
-                    {i18n.gettext("genericQuestionsAboutMentalHealth")}
-                  </h1>
-                  <div className="md:grid md:grid-cols-3">
-                    <Checkbox
-                      id="genericMentalQuestion1Checkbox"
-                      option={i18n.gettext("genericMentalQuestion1")}
-                    />
-                    <Checkbox
-                      id="genericMentalQuestion2Checkbox"
-                      option={i18n.gettext("genericMentalQuestion2")}
-                    />
-                    <Checkbox
-                      id="genericMentalQuestion3Checkbox"
-                      option={i18n.gettext("genericMentalQuestion3")}
-                    />
-                  </div>
-                  <h1 className="my-8">
-                    {" "}
-                    {i18n.gettext("genericQuestionsAboutSocialHealth")}
-                  </h1>
-                  <div className="md:grid md:grid-cols-3">
-                    <Checkbox
-                      id="genericSocialQuestion1Checkbox"
-                      option={i18n.gettext("genericSocialQuestion1")}
-                    />
-                    <Checkbox
-                      id="genericSocialQuestion2Checkbox"
-                      option={i18n.gettext("genericSocialQuestion2")}
-                    />
-                    <Checkbox
-                      id="genericSocialQuestion3Checkbox"
-                      option={i18n.gettext("genericSocialQuestion3")}
-                    />
-                  </div>
-                  <h1 className="my-8">
-                    {i18n.gettext(
-                      "genericQuestionsAboutSocialComplexCareHealth"
-                    )}
-                  </h1>
-                  <div className="md:grid md:grid-cols-3">
-                    <Checkbox
-                      id="genericSocialComplexCareQuestion1Checkbox"
-                      option={i18n.gettext("genericSocialComplexCareQuestion1")}
-                    />
-                    <Checkbox
-                      id="genericSocialComplexCareQuestion2Checkbox"
-                      option={i18n.gettext("genericSocialComplexCareQuestion2")}
-                    />
-                    <Checkbox
-                      id="genericSocialComplexCareQuestion3Checkbox"
-                      option={i18n.gettext("genericSocialComplexCareQuestion3")}
-                    />
-                  </div>
-                  <h1 className="my-8">
-                    {i18n.gettext("genericQuestionsAboutSocialFraility")}
-                  </h1>
-                  <div className="md:grid md:grid-cols-3">
-                    <Checkbox
-                      id="genericSocialFrailityQuestion1Checkbox"
-                      option={i18n.gettext("genericSocialFrailityQuestion1")}
-                    />
-                    <Checkbox
-                      id="genericSocialFrailityQuestion2Checkbox"
-                      option={i18n.gettext("genericSocialFrailityQuestion2")}
-                    />
-                    <Checkbox
-                      id="genericSocialFrailityQuestion3Checkbox"
-                      option={i18n.gettext("genericSocialFrailityQuestion3")}
-                    />
-                  </div>
-                    </div>
-                    <div className="lg:basis-1/3 lg:mt-12 lg:pt-12">
-                      <img src={doctorAndPatient} alt="doctorAndPatient" />
+                      id="languageOtherPreferredInput"
+                      />
                     </div>
                   </div>
-                </ol>
-              </div>
+
+                  <div className="md:grid md:grid-cols-3 my-4">
+                    <UserInput
+                      myLabel={i18n.gettext("location")}
+                      type="text"
+                      id="locationInput"
+                    />
+                  </div>
+
+                  <div className="my-8"> 
+                    <h1 className="my-4">
+                      {i18n.gettext("healthProfessionalGenderPreference")}
+                    </h1>
+                    <div className="md:grid md:grid-cols-3">
+                      <Checkbox
+                        id="healthProfessionalGenderPreference1Checkbox"
+                        option={i18n.gettext("healthProfessionalGenderPreference1")}
+                      />
+                      <Checkbox
+                        id="healthProfessionalGenderPreference2Checkbox"
+                        option={i18n.gettext("healthProfessionalGenderPreference2")}
+                      />
+                      <Checkbox
+                        id="healthProfessionalGenderPreference3Checkbox"
+                        option={i18n.gettext("healthProfessionalGenderPreference3")}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="my-8">
+                    <h1 className="my-4">
+                      {i18n.gettext("physicalHealth")}
+                    </h1>
+                    <div className="md:grid md:grid-cols-3">
+                      <Checkbox
+                        id="physicalHealthOption1Checkbox"
+                        option={i18n.gettext("physicalHealthOption1")}
+                      />
+                      <Checkbox
+                        id="physicalHealthOption2Checkbox"
+                        option={i18n.gettext("physicalHealthOption2")}
+                      />
+                      <Checkbox
+                        id="physicalHealthOption3Checkbox"
+                        option={i18n.gettext("physicalHealthOption3")}
+                      />
+                      <Checkbox
+                        id="physicalHealthOption4Checkbox"
+                        option={i18n.gettext("physicalHealthOption4")}
+                      />
+                      <Checkbox
+                        id="physicalHealthOption5Checkbox"
+                        option={i18n.gettext("physicalHealthOption5")}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="my-8">
+                    <h1 className="my-4">
+                      {i18n.gettext("mentalHealth")}
+                    </h1>
+                    <div className="md:grid md:grid-cols-3">
+                      <Checkbox
+                        id="mentalHealthOption1Checkbox"
+                        option={i18n.gettext("mentalHealthOption1")}
+                      />
+                      <Checkbox
+                        id="mentalHealthOption2Checkbox"
+                        option={i18n.gettext("mentalHealthOption2")}
+                      />
+                      <Checkbox
+                        id="mentalHealthOption3Checkbox"
+                        option={i18n.gettext("mentalHealthOption3")}
+                      />
+                      <Checkbox
+                        id="mentalHealthOption4Checkbox"
+                        option={i18n.gettext("mentalHealthOption4")}
+                      />
+                      <Checkbox
+                        id="mentalHealthOption5Checkbox"
+                        option={i18n.gettext("mentalHealthOption5")}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="my-8">
+                    <h1 className="my-4">
+                      {i18n.gettext("currentStatus")}
+                    </h1>
+                    <div>
+                      <Checkbox
+                        id="currentStatus1Checkbox"
+                        option={i18n.gettext("currentStatus1")}
+                      />
+                      <Checkbox
+                        id="currentStatus2Checkbox"
+                        option={i18n.gettext("currentStatus2")}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="my-8">
+                    <h1 className="my-4">
+                      {i18n.gettext("whoSeekingDoctor")}
+                    </h1>
+                    <div className="md:grid md:grid-cols-3">
+                      <Checkbox
+                        id="whoSeekingDoctorOption1Checkbox"
+                        option={i18n.gettext("whoSeekingDoctorOption1")}
+                      />
+                      <Checkbox
+                        id="whoSeekingDoctorOption2Checkbox"
+                        option={i18n.gettext("whoSeekingDoctorOption2")}
+                      />
+                      <Checkbox
+                        id="whoSeekingDoctorOption3Checkbox"
+                        option={i18n.gettext("whoSeekingDoctorOption3")}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="my-8">
+                    <h1 className="my-4">
+                      {i18n.gettext("registerForOthers1")}
+                    </h1>
+                    <h1 className="my-4">
+                      {i18n.gettext("registerForOthers2")}
+                    </h1>
+                    <h1 className="my-4">
+                      {i18n.gettext("registerForOthersQuestion1")}
+                    </h1>
+                    <div className="md:grid md:grid-cols-3">
+                      <Checkbox
+                        id="registerForOthersQuestion1Option1Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion1Option1")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion1Option2Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion1Option2")}
+                      />
+                    </div>
+
+                    <h1 className="my-4">
+                      {i18n.gettext("registerForOthersQuestion2")}
+                    </h1>
+                    <div className="md:grid md:grid-cols-3">
+                      <Checkbox
+                        id="registerForOthersQuestion2Option1Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option1")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion2Option2Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option2")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion2Option3Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option3")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion2Option4Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option4")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion2Option5Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option5")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion2Option6Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option6")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion2Option7Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option7")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion2Option8Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option8")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion2Option9Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option9")}
+                      />
+                      <Checkbox
+                        id="registerForOthersQuestion2Option10Checkbox"
+                        option={i18n.gettext("registerForOthersQuestion2Option10")}
+                      />
+                    </div>
+
+                    <h1 className="my-4">
+                      {i18n.gettext("contactInformation")}
+                    </h1>
+                    <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      <UserInput
+                        myLabel={i18n.gettext("firstNameIs")}
+                        type="text"
+                        id="firstNameInput"
+                      />
+                      <UserInput
+                        myLabel={i18n.gettext("lastNameIs")}
+                        type="text"
+                        id="lastNameInput"
+                      />
+                      <UserInput
+                        myLabel={i18n.gettext("phoneNumberIs")}
+                        type="text"
+                        id="phoneNumberInput"
+                      />
+                      <UserInput
+                        myLabel={i18n.gettext("emailAddressIs")}
+                        type="text"
+                        id="emailAddressIs"
+                      />
+                    </div>
+ 
+                    <h1 className="my-4">
+                      {i18n.gettext("communicationPreference")}
+                    </h1>
+                    <div className="md:grid md:grid-cols-3">
+                      <Checkbox
+                        id="communicationPreferenceOption1Checkbox"
+                        option={i18n.gettext("communicationPreferenceOption1")}
+                      />
+                      <Checkbox
+                        id="communicationPreferenceOption2Checkbox"
+                        option={i18n.gettext("communicationPreferenceOption2")}
+                      />
+                    </div>  
+                  </div>
+                </div>
+                    
               <div className="text-center py-10">
                 <button className="btn btn-orange my-6 font-bold uppercase">
                   {i18n.gettext("submitRegistrationButton")}
                 </button>
+              </div>
               </div>
             </div>
           </div>

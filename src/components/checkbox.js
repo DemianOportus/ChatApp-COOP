@@ -1,7 +1,7 @@
 export default function Checkbox(props) {
     return (
       <div>
-        <div className="mb-3 xl:w-96">
+        <div className="mb-3">
             <input
               type= "checkbox"
               className="

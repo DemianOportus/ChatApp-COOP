@@ -10,9 +10,12 @@ export default function Homepage() {
   useContext(Context);
   return (
       <div className="text-center mt-10  mx-auto text-myDefaultGrey">
-        <h1 className="text-4xl font-[raleway] uppercase font-semibold md:pb-8">
-          {i18n.gettext("welcomeToChat")}
+        <h1 className="text-4xl font-[raleway] uppercase font-semibold md:pb-2">
+          {i18n.gettext("welcomeToChat1")}
         </h1>
+        <h2 className="text-3xl font-[raleway] font-semibold md:pb-8">
+          {i18n.gettext("welcomeToChat2")}
+        </h2>
         <div className="md:hidden div--triangle">
           <h2 className="text-2xl font-[myriadLight]">
             {i18n.gettext("whatWeOffer")}
@@ -98,7 +101,7 @@ export default function Homepage() {
         </div>
         <div className="md:flex md:justify-end">
           <div className="div--joinBackwardsTriangle uppercase text-4xl md:w-1/2 lg:hidden">
-            <h1>{i18n.gettext("join")} </h1>
+            <h1>{i18n.gettext("join")}</h1>
             <h1>{i18n.gettext("asDoctor")}</h1>
           </div>
       </div>

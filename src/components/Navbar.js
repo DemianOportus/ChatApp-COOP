@@ -58,7 +58,7 @@ function Navbar() {
               />
             </div>
             <div className="text-[1.5rem] pb-[20px] pt-[40px] font-[myriadRegular] md:pb-[30px]">
-              <p>CHAT APP</p>
+              <p>CHAT App</p>
               {/* <p>{i18n.gettext("clinicOfTheFuture")}</p> */}
             </div>
           </div>
