@@ -37,7 +37,7 @@ function Footer() {
             />
           </div>
           <div className="text-lg font-[myriadBold] pb-[0px] pt-[30px] text-myDefaultGrey">
-            <p>CHAT APP</p>
+            <p>CHAT App</p>
             {/* <hr className="border-black" /> */}
             {/* <p>{i18n.gettext("clinicOfTheFuture")}</p> */}
           </div>

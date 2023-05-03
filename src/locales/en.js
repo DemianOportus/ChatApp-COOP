@@ -4,7 +4,7 @@ const en = {
   // Navbar and appendNavbar.js
   language: "Français",
   joinPatient: "Join as a Patient",
-  joinDoctor: "Join as a Doctor",
+  joinDoctor: "Join as a Family Health Care Provider",
   textSizeIncrease: "Text Size +",
   textSizeDecrease: "Text Size -",
   home: "Home",
@@ -25,20 +25,23 @@ const en = {
   howItWorks: "how the 'match' works",
 
   // Homepage -- Bullet points How the match works
-  ul1: "Visit the 'Register as a patient' link to begin your registration",
-  ul2: "Complete the registration form",
-  ul3: "Receive a notification by email and/or phone about potential match(es) based on your preferences",
-  ul4: "Call the practice, family doctor or nurse practitioner to book your first appointment",
-  ul5: "No matches? You will be placed in a queue and receive monthly status updates (up to 6 months, unsubscribe anytime)",
-  ul6: "Your needs have changed? Submit a new registration form and initiate a new match",
-  //Homepage -- Triangles
+  ul1: "Visit the 'JOIN AS A PATIENT' link to begin your registration.",
+  ul2: "Complete the registration form.",
+  ul3: "Receive a notification by email and/or phone about potential match(es) based on your preferences.",
+  ul4: "Call the practice, family doctor or nurse practitioner to book your first appointment.",
+  ul5: "No matches? You will be placed in a queue and receive monthly status updates (up to 6 months, unsubscribe anytime).",
+  ul6: "Your needs have changed? Submit a new registration form and initiate a new match.",
+  
+  // Homepage -- Triangles
   join: "join",
   asPatient: "as a patient",
   asDoctor: "as a doctor",
   getMatchedWithPatients:
     "Get matched with patients that fit your practice's care services and areas of expertise.",
+  
   // Homepage -- Buttons
-  joinAsDoctor: "Join As A Family Health Care Provider",
+  joinAsDoctor1: "Join As A Family",
+  joinAsDoctor2: "Health Care Provider",
   joinAsPatient: "Join as a patient",
 
   //FOOTER
@@ -68,7 +71,6 @@ const en = {
     "Continuity Health Attachment Technology (CHAT) uses end-to-end encrpytion to ensure the highest level of security for your data. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…",
 
   // PAGE -- About Us
-
   aboutUsTitle: "About us",
   aboutUsDescription:
     "Continuity Health Attachment Technology (CHAT) is a matching service linking patients without a family doctor to a family doctor within their community and surrounding areas. The matching is based on health and social needs of both patients and family doctors.  The service integrates a centralized waiting list registry system that is accessible across all provinces to serve all Canadians.",
@@ -148,81 +150,27 @@ const en = {
   submitRegistrationButton: "Submit Registration",
 
   // Join as a doctor
-  li1: "Go to the registration form.",
+  li1: "Visit the 'JOIN AS A FAMILY HEALTH CARE PROVIDER' link to begin your registration.",
   li2: "Complete the registration form.",
-  li3: "Receive a notification about potential matches based on your questionnaire.",
-  li4: "Accept  patients.",
+  li3: "Receive a notification when your referral information has been passed on to a patient.",
   dropdown1: "what makes this solution different",
   dropdown2: "how to use this solution in your practice",
-  dropdown3: "incentives for onboarding new patients",
-  personalInformation: "Personal Information",
-  professionalInformation: "Professional Information",
-  practiceName: "Practice name:",
-  providerName: "Provider's name:",
-  numberOfSpots: "Number of available spots for patients:",
-  officeAddress: "Office Address:",
-  selectLanguage:
-    "What language do you prefer to communicate with patients in (select all that apply):",
-  englishOption: "1. English",
-  frenchOption: "2. French",
-  spanishOption: "3. Spanish",
-  arabicOption: "4. Arabic",
-  chineseOption: "5. Chinese",
-  japaneseOption: "6. Japanese",
-  portugueseOption: "7. Portuguese",
-  otherLanguagesOption: "8. Others:",
-  yourSpecializations: "Your Specializations",
-  physicianSpecialties: "Physician specialties that apply to you:",
-  allergyAndImmunologyOption: "1. Allergy and immunology",
-  anesthesiologyOption: "2. Anesthesiology",
-  dermatologyOption: "3. Dermatology",
-  diagnosticRadiologyOption: "4. Diagnostic radiology",
-  emergencyMedicineOption: "5. Emergency medicine",
-  familyMedicineOption: "6. Family medicine",
-  internalMedicineOption: "7. Internal medicine",
-  medicalGeneticsOption: "8. Medical genetics",
-  neurologyOption: "9. Neurology",
-  nuclearMedicineOption: "10. Nuclear medicine",
-  obstetricsAndGynaecologyOption: "11. Obstetrics and gynaecology",
-  ophthalmologyOption: "12. Opthalmology",
-  pathologyOption: "13. Pathology",
-  pediatricsOption: "14. Pediatrics",
-  physicalMedicineAndRehabOption: "15. Physical medicine and rehabilitation",
-  preventiveMedicineOption: "16. Preventive medicine",
-  psychiatryOption: "17. Psychiatry",
-  radiationOncologyOption: "18. Radiation oncology",
-  surgeryOption: "19. Sugery",
-  urologyOption: "20. Urology",
-  otherSpecialtiesOption: "21. Other:",
-
-  physicianChronicIllnessSpecialties: "Physician chronic illness specialties:",
-  ALSOption: "1. ALS (Lou Gehrig's Disease)",
-  alzheimersOption: "2. Alzheimer's Disease and other Dementias",
-  arthritisOption: "3. Arthritis",
-  asthmaOption: "4. Asthma",
-  cancerOption: "5. Cancer",
-  chronicObstructiveOption: "6. Chronic Obstructive Pulmonary Disease (COPD)",
-  crohnsOption:
-    "7. Crohn's Disease, Ulcerative Colitis, Other Inflammatory Bowel Diseases, Irritable Bowel Syndrome",
-  cysticFibrosisOption: "8. Cystic Fibrosis",
-  otherChronicIllnessSpecialtiesOption: "9. Others:",
-
-  physicianMentalHealthSpecialties:
-    "Physician chronic mental health & addictions specialties:",
-  alcoholAddictionOption: "1. Alcohol addiction",
-  prescriptionDrugAddictionOption: "2. Prescription drug addiction",
-  drugAddictionOption: "3. Drug addiction",
-  heroinAddictionOption: "4. Heroin addiction",
-  opioidAddictionOption: "5. Opioid addiction",
-  moodDisordersOption:
-    "6. Mood disorders: major depression and bipolar disorder",
-  schizophreniaOption: "7. Schizophrenia",
-  anxietyDisordersOption: "8. Anxiety disorders",
-  personalityDisordersOption: "9. Personality disorders",
-  eatingDisordersOption: "10. Eating disorders",
-  problemGamblingOption: "11. Problem gambling",
-  substanceDependencyOption: "12. Substance dependency",
-  otherMentalHealthSpecialties: "13. Others:",
+  dropdown3: "incentives for accepting new patients",
+  clinicName: "Clinic Name",
+  emailAddress: "Email (Optional)",
+  providerFirstName: "Provider First Name (optional) (Doctor/Nurse practitioner)",
+  providerLastName: "Provider Last Name (optional) (Doctor/Nurse practitioner)",
+  policyAccept: "I read the CONSENT NOTICE and I authorize the CHAT application to use my information to match me/the clinic with an unattached patient in the community using the information provided. My information will be shared with the unattached patient, and it is their responsibility to communicate with me or the clinic to schedule an appointment.",
+  careServicesLanguage: "Language of care services",
+  numberOfSpots: "Number of available spots for new patients with the family health care provider and/or the clinic",
+  providerSpecializations: "The provider/clinic specializes in the following health conditions:",
+  providerSpecialtiesOption1: "Mental health",
+  providerSpecialtiesOption2: "Diabetes",
+  providerSpecialtiesOption3: "Chronic conditions",
+  providerSpecialtiesOption4: "Addiction and Substance Use",
+  providerSpecialtiesOption5: "Obstetrics and gynaecology",
+  providerSpecialtiesOption6: "Other",
+  providerOtherSpecialties: "If other, please specify:",
 };
 
 export default en;

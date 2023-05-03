@@ -15,7 +15,7 @@ export default function JoinAsAPatient() {
         <h1 className="text-4xl font-[raleway] font-bold uppercase mb-8">
           {i18n.gettext("joinPatient")}
         </h1>
-        <div class="flex flex-row">
+        <div class="lg:flex lg:flex-row">
           <div class="basis-2/5">
             <div className="div--promos mt-10">
               <iframe
@@ -30,14 +30,16 @@ export default function JoinAsAPatient() {
               ></iframe>
             </div>
           </div>
-          <div class="basis-3/5 ml-2 text-start md:mx-10">
+          <div class="basis-3/5 ml-2 text-start lg:mx-10">
             <h1 className="text-3xl font-[raleway] font-normal mb-8 mt-10">
               {i18n.gettext("howToJoin")}
             </h1>
             <div className="mt-4">
               <div className="mt-4">
                 <ol className="text-2xl font-light">
-                  <li>{i18n.gettext("ul1")}</li>
+                  <li className="">
+                    <a className="hover:underline" href="#registrationForm">{i18n.gettext("ul1")}</a>
+                  </li>
                   <li>{i18n.gettext("ul2")}</li>
                   <li>{i18n.gettext("ul3")}</li>
                   <li>{i18n.gettext("ul4")}</li>
@@ -50,7 +52,7 @@ export default function JoinAsAPatient() {
           </div>
         </div>
         
-        <div className="ml-0 sm:ml-4 md:mx-12">
+        <div className="ml-0 sm:ml-4 md:mx-12" id="registrationForm">
           <h1 className="text-4xl font-[raleway] font-normal uppercase my-12 md:text-center">
             {i18n.gettext("registrationForm")}
           </h1>
@@ -65,10 +67,7 @@ export default function JoinAsAPatient() {
                   <a className="text-2xl text-myLightBlue" href="#">{i18n.gettext("registerByEmail2")}</a> 
                   {i18n.gettext("registerByEmail3")}
                 </h2>
-                <a 
-                  className="text-2xl underline text-myLightBlue"
-                  href="/data-privacy"
-                >
+                <a className="text-2xl underline text-myLightBlue" href="/data-privacy">
                   <i class="fa-solid fa-circle-exclamation text-black pr-4"></i> {i18n.gettext("learnAboutWhyWeAsk")}
                 </a>
               </div>
@@ -132,7 +131,7 @@ export default function JoinAsAPatient() {
                   />
 
                   <div>
-                    <h1 className="my-8">
+                    <h1 className="my-4">
                       {i18n.gettext("languagePreference")}
                     </h1>
                     <div className="md:grid md:grid-cols-3">
@@ -343,45 +342,53 @@ export default function JoinAsAPatient() {
                       />
                     </div>
 
-                    <h1 className="my-4">
-                      {i18n.gettext("contactInformation")}
-                    </h1>
-                    <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                      <UserInput
-                        myLabel={i18n.gettext("firstNameIs")}
-                        type="text"
-                        id="firstNameInput"
-                      />
-                      <UserInput
-                        myLabel={i18n.gettext("lastNameIs")}
-                        type="text"
-                        id="lastNameInput"
-                      />
-                      <UserInput
-                        myLabel={i18n.gettext("phoneNumberIs")}
-                        type="text"
-                        id="phoneNumberInput"
-                      />
-                      <UserInput
-                        myLabel={i18n.gettext("emailAddressIs")}
-                        type="text"
-                        id="emailAddressIs"
-                      />
+                    <div class="lg:flex lg:flex-row">
+                      <div class="basis-3/5">
+                        <h1 className="my-4">
+                          {i18n.gettext("contactInformation")}
+                        </h1>
+                        <div className="md:grid md:grid-cols-2 gap-8">
+                          <UserInput
+                            myLabel={i18n.gettext("firstNameIs")}
+                            type="text"
+                            id="firstNameInput"
+                          />
+                          <UserInput
+                            myLabel={i18n.gettext("lastNameIs")}
+                            type="text"
+                            id="lastNameInput"
+                          />
+                          <UserInput
+                            myLabel={i18n.gettext("phoneNumberIs")}
+                            type="text"
+                            id="phoneNumberInput"
+                          />
+                          <UserInput
+                            myLabel={i18n.gettext("emailAddressIs")}
+                            type="text"
+                            id="emailAddressIs"
+                          />
+                        </div>
+                        <h1 className="my-4">
+                          {i18n.gettext("communicationPreference")}
+                        </h1>
+                        <div className="md:grid md:grid-cols-2">
+                          <Checkbox
+                            id="communicationPreferenceOption1Checkbox"
+                            option={i18n.gettext("communicationPreferenceOption1")}
+                          />
+                          <Checkbox
+                            id="communicationPreferenceOption2Checkbox"
+                            option={i18n.gettext("communicationPreferenceOption2")}
+                          />
+                        </div>
+                      </div> 
+                      <div class="basis-2/5">
+                        <div class="lg:pl-8 lg:mr-12">
+                          <img src={doctorAndPatient} alt="doctorAndPatient"/>
+                        </div>
+                      </div>
                     </div>
- 
-                    <h1 className="my-4">
-                      {i18n.gettext("communicationPreference")}
-                    </h1>
-                    <div className="md:grid md:grid-cols-3">
-                      <Checkbox
-                        id="communicationPreferenceOption1Checkbox"
-                        option={i18n.gettext("communicationPreferenceOption1")}
-                      />
-                      <Checkbox
-                        id="communicationPreferenceOption2Checkbox"
-                        option={i18n.gettext("communicationPreferenceOption2")}
-                      />
-                    </div>  
                   </div>
                 </div>
                     

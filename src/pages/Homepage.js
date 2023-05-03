@@ -39,7 +39,7 @@ export default function Homepage() {
           </div>
         </div>
         <div className="ml-2 text-start sm:ml-4 md:mx-[50px] md:mt-[30px]">
-          <h1 className="text-4xl font-[raleway] font-normal uppercase lg:text-center">
+          <h1 className="text-4xl font-[raleway] font-normal uppercase text-center">
             {i18n.gettext("getMatched")}
           </h1>
           <div className="mt-4">
@@ -51,29 +51,28 @@ export default function Homepage() {
                 {i18n.gettext("howItWorks")}
               </h2>
               <div class="lg:flex lg:flex-row">
-              <div class="lg:basis-1/4 lg:max-w-xs md:px-5 lg:mr-20">
-                <img src={joinUs} alt="banner"/>
-              </div>
-              <div class="lg:basis-1/2 lg:items-center">
-                <ol className="font-[myriadLight] text-2xl">
-                  <li>{i18n.gettext("ul1")}</li>
-                  <li>{i18n.gettext("ul2")}</li>
-                  <li>{i18n.gettext("ul3")}</li>
-                  <li>{i18n.gettext("ul4")}</li>
-                  <li>{i18n.gettext("ul5")}</li>
-                  <li>{i18n.gettext("ul6")}</li>
-                </ol>
-              </div>
-              <div class="lg:basis-1/4"></div>
+                <div class="lg:basis-1/4 lg:max-w-xs md:px-5 lg:mr-20">
+                  <img src={joinUs} alt="banner"/>
+                </div>
+                <div class="lg:basis-3/4 lg:items-left">
+                  <ol className="font-[myriadLight] text-2xl">
+                    <li className="py-2">{i18n.gettext("ul1")}</li>
+                    <li className="py-2">{i18n.gettext("ul2")}</li>
+                    <li className="py-2">{i18n.gettext("ul3")}</li>
+                    <li className="py-2">{i18n.gettext("ul4")}</li>
+                    <li className="py-2">{i18n.gettext("ul5")}</li>
+                    <li className="py-2">{i18n.gettext("ul6")}</li>
+                  </ol>
+                </div>
               </div>
             </div>
-          <div className="hidden text-center md:my-10 lg:block">
-            <button className="btn btn-purple">
-              <a href="/join-as-a-patient">
-                {i18n.gettext("joinAsPatient")}
-              </a>
-            </button>
-          </div>
+            <div className="hidden text-center md:my-10 lg:block">
+              <button className="btn btn-purple">
+                <a href="/join-as-a-patient">
+                  {i18n.gettext("joinAsPatient")}
+                </a>
+              </button>
+            </div>
           </div>
         </div>
         <div className="div--joinTriangle uppercase text-4xl font-[myriadBold] md:w-1/2 lg:hidden">
@@ -94,7 +93,9 @@ export default function Homepage() {
           <div className="hidden text-center md:my-10 lg:block md:pb-10">
             <button className="btn-purple btn">
               <a href="/join-as-a-doctor">
-                {i18n.gettext("joinAsDoctor")}
+                {i18n.gettext("joinAsDoctor1")}
+                <br />
+                {i18n.gettext("joinAsDoctor2")}
               </a>
             </button>
           </div>
@@ -104,7 +105,7 @@ export default function Homepage() {
             <h1>{i18n.gettext("join")}</h1>
             <h1>{i18n.gettext("asDoctor")}</h1>
           </div>
-      </div>
+        </div>
     </div>
   );
 }
